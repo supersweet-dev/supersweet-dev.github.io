@@ -1,7 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import * as Tarot from "moonlight-tarot"
+import * as Tarot from "velvet-tarocchi"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 

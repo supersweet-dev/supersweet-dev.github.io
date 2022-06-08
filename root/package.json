@@ -16,11 +16,11 @@
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-transformer-sharp": "^4.11.0",
     "material-ui": "^0.20.2",
-    "moonlight-tarot": "^1.3.1",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "velvet-tarocchi": "^1.0.3"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
