@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, logo, home }) => (
   <header
     style={{
       background: `#f7d521`,
@@ -18,12 +18,14 @@ const Header = ({ siteTitle }) => (
     >
       <h1 style={{ margin: 0 }}>
         <Link
-          to="/"
+          to={home}
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
+          {logo}
+          {"  "}
           {siteTitle}
         </Link>
       </h1>

@@ -8,7 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import { StaticImage } from "gatsby-plugin-image"
 import Header from "./header"
 import "./layout.css"
 
@@ -25,7 +25,18 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        home="/"
+        logo={
+          <StaticImage
+            alt="w2l"
+            src="../images/ss-icon.png"
+            width={50}
+            height={50}
+          />
+        }
+      />
       <div
         style={{
           margin: `0 auto`,
