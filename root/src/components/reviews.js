@@ -13,7 +13,7 @@ export const reviews = {
     cover: (
       <StaticImage
         alt="Undead Unlock Vol1"
-        src={"../../../images/manga/undead-unluck.png"}
+        src={"../images/manga/undead-unluck.png"}
       />
     ),
     score: "4/5 censor bars",

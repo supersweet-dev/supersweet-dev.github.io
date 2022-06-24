@@ -4,7 +4,7 @@ import * as React from "react"
 import Layoutw2l from "../../../components/layout-w2l"
 import Seo from "../../../components/seo"
 import MangaCard from "./manga-card"
-import { reviews } from "./reviews"
+import { reviews } from "../../../components/reviews"
 
 const IndexPage = () => {
   const entries = []
