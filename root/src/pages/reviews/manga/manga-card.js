@@ -1,14 +1,30 @@
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material"
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material"
+import { Link } from "gatsby"
 import * as React from "react"
 
 const MangaCard = props => {
   return (
     <Card sx={{ display: "flex" }}>
-      <Box sx={{ display: "flex", flexDirection: "column", flexWrap: "wrap" }}>
+      {props.cover}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}
+      >
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography
             component="div"
-            variant="h5"
+            variant="h6"
             sx={{ textTransform: "uppercase" }}
           >
             {props.book}
@@ -46,9 +62,19 @@ const MangaCard = props => {
             tasting notes: {props.flavorProfile}
           </Typography>
         </CardContent>
-        <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}></Box>
+        <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+          {props.index ? (
+            <Link
+              to={"/reviews/manga/" + props.slug}
+              style={{ textDecoration: "none" }}
+            >
+              <Button>Read</Button>
+            </Link>
+          ) : (
+            <></>
+          )}
+        </Box>
       </Box>
-      <CardMedia sx={{ width: 320 }}>{props.cover}</CardMedia>
     </Card>
   )
 }

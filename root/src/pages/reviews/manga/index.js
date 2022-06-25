@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material"
-import { Link } from "gatsby"
+import { Grid, Typography } from "@mui/material"
 import * as React from "react"
 import Layoutw2l from "../../../components/layout-w2l"
 import Seo from "../../../components/seo"
@@ -9,15 +8,7 @@ import { reviews } from "../../../components/reviews"
 const IndexPage = () => {
   const entries = []
   for (const key in reviews) {
-    entries.push(
-      <Link
-        key={key}
-        to={"/reviews/manga/" + reviews[key].slug}
-        style={{ textDecoration: "none" }}
-      >
-        <MangaCard {...reviews[key]} />
-      </Link>
-    )
+    entries.push(<MangaCard {...reviews[key]} index key={key} />)
   }
   return (
     <Layoutw2l>
@@ -47,6 +38,7 @@ const IndexPage = () => {
         <br />
         <br />
       </Typography>
+
       {entries}
     </Layoutw2l>
   )
