@@ -1,6 +1,6 @@
 import * as React from "react"
-import Layoutw2l from "../../../components/layout-w2l"
-import Seo from "../../../components/seo"
+import Layoutw2l from "./layout-w2l"
+import Seo from "./seo"
 import MangaCard from "./manga-card"
 
 const Entry = props => {

@@ -42,24 +42,21 @@ const Layoutw2l = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          <p>
+          <Typography variant="body2">
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.com">Gatsby</a>
-          </p>
-          <p>
-            <Link to="/">
-              <Typography variant="body2">
-                <StaticImage
-                  alt="supersweet"
-                  src="../images/ss-icon.png"
-                  width={20}
-                  height={20}
-                />
-                supersweet
-              </Typography>
-            </Link>
-          </p>
+          </Typography>
+
+          <Link to="/">
+            <Typography variant="body2">supersweet</Typography>
+            <StaticImage
+              alt="supersweet"
+              src="../images/ss-icon.png"
+              width={20}
+              height={20}
+            />
+          </Link>
         </footer>
       </div>
     </>

@@ -25,6 +25,7 @@
     "velvet-tarocchi": "^1.0.3"
   },
   "devDependencies": {
+    "gatsby-plugin-material-ui": "^4.1.0",
     "gh-pages": "^4.0.0",
     "prettier": "^2.6.2"
   },

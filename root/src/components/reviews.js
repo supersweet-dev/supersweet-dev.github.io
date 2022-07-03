@@ -21,8 +21,8 @@ export const reviews = {
     flavorProfile:
       "Immediately metallic, surprisingly sweet finish. Bright, sour notes contribute to a funky feel.",
     body: (
-      <Typography variant="body2">
-        <p>
+      <>
+        <Typography variant="body1" paragraph>
           Undead Unluck begins with an attempted suicide. I am not going to make
           assumptions about how Japanese audiences reacted to this scene. And
           I'm certainly not going to wash my dirty laundry in public. Not here,
@@ -39,9 +39,9 @@ export const reviews = {
           with dangerous, even fatal misfortune. So, having read the newly
           released final chapter of her favorite manga, she sees no more reason
           to prolong her unfortunate existence. Boy, isn't that one relatable?
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           Fate plays its hand essentially immediately with this one. Fuuko's
           attempt is interrupted by our second protagonist. That's right. We've
           got 2 central characters at the forefront of this tale. And it makes
@@ -53,9 +53,9 @@ export const reviews = {
           footnote that is the marriage between Naruto and Hinata. These two's
           relationship is front and center, beginning with this intriguing first
           encounter.{" "}
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           Just as Fuuko is warning those who might attempt to save her by
           claiming that touching her means death, she is restrained by a hunk of
           a man. This guy is clearly more of a Kenshiro or maybe a Goku than a
@@ -69,9 +69,9 @@ export const reviews = {
           all opposite of Fuuko. For now, we know they have something in common.
           This man wants to die too. By the second page of the story, Fuuko has
           met her perfect complement.{" "}
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           After this brief introduction we see Fuuko’s powers in action. Once he
           lets go of her, the man is summarily torn to pieces by the very train
           Fuuko had been waiting to jump infront of. She’s immediately
@@ -92,9 +92,9 @@ export const reviews = {
           entire body from the stump of his decapitated noggin. Undead is
           reckless in life and battle because there is no such thing as danger
           to him.
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           {" "}
           As he’s probing Fuuko from information on her Unluck, Undead continues
           to be brash and impudent, bordering on unpleasant. After a bout of
@@ -109,9 +109,9 @@ export const reviews = {
           won’t let her come to harm. After all, he’s finally found her. This
           romantic phrasing is interrupted by a declaration of self-interest.
           He’s been looking for someone who could possibly make him die.{" "}
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           This scene draws the attention of a mysterious group of antagonists.
           The potential conflict takes a backseat to the progression of Fuuko
           and her pushy companion’s relationship. Clearly aware that she’s
@@ -134,9 +134,9 @@ export const reviews = {
           can be gentle and comforting. He’s still forward and assertive, but he
           makes a tactful effort to bring her solace in the mundane yet
           painfully yearned for act of a haircut.
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           {" "}
           Their bonding is interrupted by the delivery of the earlier setup. The
           mysterious group tracking them makes itself known by beheading Undead
@@ -158,9 +158,9 @@ export const reviews = {
           combat scene implies yes, as Fuuko kisses Undead, confident he will
           survive but that the impact of the misfortune will be enough to
           dispose of their enemies.
-        </p>
-        <br />
-        <p>
+        </Typography>
+
+        <Typography variant="body1" paragraph>
           {" "}
           This explosive first chapter closes with a budding friendship between
           the two. Fuuko is glad to finally have someone in her life she can
@@ -170,8 +170,8 @@ export const reviews = {
           trying to convince her they should shag and see what happens. The
           narration gives us a compelling promise, this will be the story of the
           greatest death ever.
-        </p>
-      </Typography>
+        </Typography>
+      </>
     ),
   },
 }

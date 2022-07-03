@@ -1,5 +1,5 @@
 import * as React from "react"
-import Entry from "./entry"
+import Entry from "../../../components/entry"
 import { reviews } from "../../../components/reviews"
 const slug = "undead-unluck"
 const props = reviews[slug]

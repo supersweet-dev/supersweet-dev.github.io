@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material"
+import { Box, Button, Card, CardContent, Typography } from "@mui/material"
 import { Link } from "gatsby"
 import * as React from "react"
 
@@ -68,7 +61,9 @@ const MangaCard = props => {
               to={"/reviews/manga/" + props.slug}
               style={{ textDecoration: "none" }}
             >
-              <Button>Read</Button>
+              <Button variant="contained" color="primary">
+                Read
+              </Button>
             </Link>
           ) : (
             <></>
