@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "supersweet-dev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "a website that is mine for me",
+  "version": "0.3.0",
+  "author": "Jim Alvarez <jim@supersweet.dev>",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
