@@ -62,7 +62,7 @@ const MangaCard = props => {
               style={{ textDecoration: "none" }}
             >
               <Button variant="contained" color="primary">
-                Read
+                Preview
               </Button>
             </Link>
           ) : (
