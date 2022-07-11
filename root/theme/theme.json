@@ -7,10 +7,28 @@
         "main": "#ffd600"
     },
     "secondary":{
-        "contrastText": "#000000",
-        "dark": "#c7a500",
-        "light": "#ffff52",
-        "main": "#ffd600"
+        "contrastText": "#ffffff",
+        "dark": "#341453",
+        "light": "#9069b0",
+        "main": "#613d80"
+    },
+    "tampico":{
+       "contrastText": "#000000",
+        "dark": "#005250",
+        "light": "#5dafab",
+        "main": "#287f7c"
+    },
+    "makespace":{
+       "contrastText": "#000000",
+        "dark": "#a78b00",
+        "light": "#ffed59",
+        "main": "#ddbb20"
+    },
+    "w2l":{
+       "contrastText": "#000000",
+        "dark": "#a66200",
+        "light": "#ffc055",
+        "main": "#dd9022"
     },
     "colors": {
       "white": "#d7d4d4",
