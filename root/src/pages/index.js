@@ -69,6 +69,7 @@ const IndexPage = () => (
           </CardContent>
         </Box>
       </Card>
+
       <Box>
         <Card
           elevation={3}
@@ -188,6 +189,76 @@ const IndexPage = () => (
           </Box>
         </Card>
       </Box>
+    </Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+
+        justifyContent: "center",
+        alignItems: "top",
+        alignContent: "top",
+        flexWrap: "wrap",
+      }}
+    >
+      <Card
+        elevation={3}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          p: 2,
+          m: 2,
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          bgcolor: "#cfb25d",
+          width: {
+            sm: 1.0,
+
+            md: 460,
+          },
+        }}
+      >
+        <Card sx={{ alignItems: "center", width: 120 }}>
+          <StaticImage alt="goldenrod" src={"../images/goldenrod.png"} />
+        </Card>
+        <Box
+          sx={{
+            width: {
+              sm: 1.0,
+
+              md: 300,
+            },
+          }}
+        >
+          <CardContent
+            sx={{
+              flexDirection: "column",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              display: "inline-flex",
+              flexShrink: 1,
+            }}
+          >
+            <Typography component="div" variant="h6">
+              Goldenrod
+            </Typography>
+            <Typography variant="body2" color="text.secondary" component="div">
+              A beautiful murderer carries the corpse of a prince. Goldenrod is
+              the common name for various wild plants related to sunflowers.
+              Passion is vice, love is opposite to temperance. Flowering
+              goldenrod can be found in meadows, prairies, and lush plains.
+            </Typography>
+            <br />
+
+            <Link to="/goldenrod/" style={{ textDecoration: "none" }}>
+              <Button variant="contained" color="goldenrod">
+                Go!
+              </Button>
+            </Link>
+          </CardContent>
+        </Box>
+      </Card>
       <Card
         elevation={3}
         sx={{
@@ -199,9 +270,14 @@ const IndexPage = () => (
           alignItems: "center",
           flexWrap: "wrap",
           bgcolor: "#768aab",
+          width: {
+            sm: 1.0,
+
+            md: 460,
+          },
         }}
       >
-        <Card sx={{ alignItems: "center", width: 180 }}>
+        <Card sx={{ alignItems: "center", width: 120 }}>
           <StaticImage alt="Make Space" src={"../images/ms-icon.png"} />
         </Card>
         <Box
@@ -209,7 +285,7 @@ const IndexPage = () => (
             width: {
               sm: 1.0,
 
-              md: 350,
+              md: 300,
             },
           }}
         >
@@ -238,8 +314,19 @@ const IndexPage = () => (
           </CardContent>
         </Box>
       </Card>
+    </Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "row",
 
-      <Box sx={{ maxWidth: 935, p: 2, m: 2 }}>
+        justifyContent: "center",
+        alignItems: "top",
+        alignContent: "top",
+        flexWrap: "wrap",
+      }}
+    >
+      <Box sx={{ maxWidth: 940, m: 4 }}>
         <Tarot.TarotBoard />
       </Box>
     </Box>

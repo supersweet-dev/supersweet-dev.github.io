@@ -24,6 +24,12 @@
         "light": "#ffed59",
         "main": "#ddbb20"
     },
+    "goldenrod":{
+       "contrastText": "#000000",
+        "dark": "#c49133",
+        "light": "#c49133",
+        "main": "#c49133"
+    },
     "w2l":{
        "contrastText": "#000000",
         "dark": "#a66200",

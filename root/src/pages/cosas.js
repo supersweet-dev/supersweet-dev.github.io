@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Typography } from "@mui/material"
 
-const IndexPage = () => (
+const CosasQueNoSeDebenDecir = () => (
   <Layout>
     <Seo title="Cosas que no se deben decir" />
     <div
@@ -175,4 +175,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default CosasQueNoSeDebenDecir
