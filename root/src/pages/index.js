@@ -36,14 +36,14 @@ const IndexPage = () => (
             p: 2,
             justifyContent: "center",
             alignItems: "center",
-            bgcolor: "#a6606a",
+            bgcolor: "#d6729d",
             width: {
               sm: 1.0,
               md: "50%",
             },
           }}
         >
-          <Box sx={{ alignItems: "center", width: 200, height: 180 }}>
+          <Box sx={{ alignItems: "center", width: 200, height: 180, mb: 4 }}>
             <StaticImage alt="this is jimi" src={"../images/me.jpeg"} />
           </Box>
           <CardContent
@@ -56,16 +56,11 @@ const IndexPage = () => (
           >
             <Typography variant="h4">Jimi Alvarez</Typography>
             <Typography variant="body2" paragraph>
-              BSC in Computer Science, Writer, Artist.
+              Computer Scientist, Amateur Electrician, Writer, Artist.
             </Typography>
+            <Typography variant="body1">FEATURED: </Typography>
             <Typography variant="body2" paragraph>
-              Welcome to my little corner of the internet. I'm housing a few
-              different projects here, from programming samples, to my writing,
-              to my hobbies.
-            </Typography>
-            <Typography variant="body2" paragraph>
-              I write fun code to keep you on your toes and sad stories to keep
-              you in your feels.
+              Reviews, Vignettes, Microgames, Photography, Blogs
             </Typography>
           </CardContent>
         </Card>
