@@ -1,40 +1,46 @@
 {
   "palette": {
-    "primary":{
-        "contrastText": "#000000",
-        "dark": "#c7a500",
-        "light": "#ffff52",
-        "main": "#ffd600"
+    "primary": {
+      "contrastText": "#000000",
+      "dark": "#c7a500",
+      "light": "#ffff52",
+      "main": "#ffd600"
     },
-    "secondary":{
-        "contrastText": "#ffffff",
-        "dark": "#341453",
-        "light": "#9069b0",
-        "main": "#613d80"
+    "secondary": {
+      "contrastText": "#ffffff",
+      "dark": "#341453",
+      "light": "#9069b0",
+      "main": "#613d80"
     },
-    "tampico":{
-       "contrastText": "#000000",
-        "dark": "#005250",
-        "light": "#5dafab",
-        "main": "#287f7c"
+    "resume": {
+      "contrastText": "#000000",
+      "dark": "#896899",
+      "light": "#896899",
+      "main": "#896899"
     },
-    "makespace":{
-       "contrastText": "#000000",
-        "dark": "#a78b00",
-        "light": "#ffed59",
-        "main": "#ddbb20"
+    "tampico": {
+      "contrastText": "#000000",
+      "dark": "#005250",
+      "light": "#5dafab",
+      "main": "#287f7c"
     },
-    "goldenrod":{
-       "contrastText": "#000000",
-        "dark": "#c49133",
-        "light": "#c49133",
-        "main": "#c49133"
+    "makespace": {
+      "contrastText": "#000000",
+      "dark": "#a78b00",
+      "light": "#ffed59",
+      "main": "#ddbb20"
     },
-    "w2l":{
-       "contrastText": "#000000",
-        "dark": "#a66200",
-        "light": "#ffc055",
-        "main": "#dd9022"
+    "goldenrod": {
+      "contrastText": "#000000",
+      "dark": "#c49133",
+      "light": "#c49133",
+      "main": "#c49133"
+    },
+    "w2l": {
+      "contrastText": "#000000",
+      "dark": "#a66200",
+      "light": "#ffc055",
+      "main": "#dd9022"
     },
     "colors": {
       "white": "#d7d4d4",

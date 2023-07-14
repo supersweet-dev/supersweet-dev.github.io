@@ -1,15 +1,15 @@
 export const featureData = [
   {
-    bgcolor: "#e3a462",
-    imageAlt: "Write 2 Left",
-    imagePath: "w2l-icon.png",
-    title: "Write 2 Left",
-    link: "/reviews/manga/",
-    buttonText: "Go!",
-    buttonColor: "w2l",
+    bgcolor: "#bf9fcf",
+    imageAlt: "resume",
+    imagePath: "resume.jpeg",
+    title: "Resume",
+    link: "/resume.pdf",
+    buttonText: "Download!",
+    buttonColor: "resume",
     maxWidth: "100%",
     content:
-      "In this review series I do a deep dive into the first volume of my favorite manga series. The first chapters are crucial, you must make readers fall in love with your cast, world, and style of storytelling. Volume 1 must be the most endearing!",
+      "A digestible compilation of my professional experience. Examples of my work at previous jobs, my publications, and my personal activities. All neatly packaged in a convenient PDF format. Make sure to visit every link.",
   },
   {
     bgcolor: "#7d9e8b",
@@ -47,5 +47,17 @@ export const featureData = [
     content: `
       A microblog to document my experiences with shortform projects. Little sculptures, keyboard builds, handmade toys, jewelry, personal recipes, minigames. I make all kinds of things.
     `,
+  },
+  {
+    bgcolor: "#e3a462",
+    imageAlt: "Write 2 Left",
+    imagePath: "w2l-icon.png",
+    title: "Write 2 Left",
+    link: "/reviews/manga/",
+    buttonText: "Go!",
+    buttonColor: "w2l",
+    maxWidth: "100%",
+    content:
+      "In this review series I do a deep dive into the first volume of my favorite manga series. The first chapters are crucial, you must make readers fall in love with your cast, world, and style of storytelling. Volume 1 must be the most endearing!",
   },
 ]
