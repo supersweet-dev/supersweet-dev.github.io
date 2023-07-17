@@ -24,14 +24,14 @@ Aug 2015 - Dec 2020
 
 ## Experience
 
-**USC Institute for Creative Technologies - Learning Sciences, Ben Nye, Full-Stack Development Intern**
+##### USC Institute for Creative Technologies - Learning Sciences, Ben Nye, Full-Stack Development Intern
 
 June 2019 - August 2019, June 2021 - August 2021
 
 - Designed and deployed a user-friendly internal tool for editing complex, redundant XML scripts, streamlining the editing process and improving efficiency. [Hosted here.](http://author-tutor.surge.sh/)
 - Owned the progress display for mentor design on an educational app during my second internship, ensuring transparency and up-to-date tracking of the user's work. [Log here.](https://github.com/mentorpal/mentor-admin/commits/main?author=supersweet-dev)
 
-**PUEDE, Web Manager**
+##### PUEDE, Web Manager
 
 January 2019 - April 2019
 
@@ -39,7 +39,7 @@ January 2019 - April 2019
 - Developed an efficient outreach system to expand the organization's reach.
 - [Logo, structure, and utilities still in use.](https://rgvpuede.org/en/)
 
-**UTRGV Social Systems Lab, Lab Assistant**
+##### UTRGV Social Systems Lab, Lab Assistant
 
 September 2018 - September 2020
 
@@ -50,7 +50,7 @@ September 2018 - September 2020
 
 ## Teaching Experience
 
-**UTRGV Department of Computer Science, Teaching Assistant**
+##### UTRGV Department of Computer Science, Teaching Assistant
 
 January 2021 - Present
 
