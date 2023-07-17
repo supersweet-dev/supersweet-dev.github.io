@@ -4,8 +4,6 @@ Edinburg, TX 78539 • [+1 (956) 897 – 3220](tel:956-897-3220) • [jim@supers
 
 [LinkedIn](https://www.linkedin.com/in/supersweet) | [GitHub](https://github.com/supersweet-dev) | [Website](https://supersweet.dev/)
 
-## Objective:
-
 Versatile Computer Science professional equipped with a broad skill set. Effective in any interdisciplinary team. Seeking to bring my strong coding abilities, visual design skills, and web management experience to a dynamic, holistic workspace. Uniquely poised to bridge communication gaps between departments, I aim to foster a cohesive and productive team environment.
 
 ---
@@ -24,23 +22,16 @@ Aug 2015 - Dec 2020
 
 ---
 
-## Skills
-
-- Coding: Proficient in C, C++, C#, Python, JS (React). Created a microgame showcased on [personal website](https://supersweet.dev/).
-- Circuit Design: Skilled in using KiCad v6. Designed a small board showcased [here](https://github.com/supersweet-dev/melodyous).
-
----
-
 ## Experience
 
-**USC Institute for Creative Technologies - Learning Sciences, Ben Nye, Full-Stack Development Intern**
+##### USC Institute for Creative Technologies - Learning Sciences, Ben Nye, Full-Stack Development Intern
 
 June 2019 - August 2019, June 2021 - August 2021
 
 - Designed and deployed a user-friendly internal tool for editing complex, redundant XML scripts, streamlining the editing process and improving efficiency. [Hosted here.](http://author-tutor.surge.sh/)
 - Owned the progress display for mentor design on an educational app during my second internship, ensuring transparency and up-to-date tracking of the user's work. [Log here.](https://github.com/mentorpal/mentor-admin/commits/main?author=supersweet-dev)
 
-**PUEDE, Web Manager**
+##### PUEDE, Web Manager
 
 January 2019 - April 2019
 
@@ -48,7 +39,7 @@ January 2019 - April 2019
 - Developed an efficient outreach system to expand the organization's reach.
 - [Logo, structure, and utilities still in use.](https://rgvpuede.org/en/)
 
-**UTRGV Social Systems Lab, Lab Assistant**
+##### UTRGV Social Systems Lab, Lab Assistant
 
 September 2018 - September 2020
 
@@ -59,7 +50,7 @@ September 2018 - September 2020
 
 ## Teaching Experience
 
-**UTRGV Department of Computer Science, Teaching Assistant**
+##### UTRGV Department of Computer Science, Teaching Assistant
 
 January 2021 - Present
 
@@ -69,13 +60,19 @@ January 2021 - Present
 
 ---
 
+## Skills
+
+- Coding: Proficient in C, C++, C#, Python, JS (React).
+- Circuit Design: Skilled in using KiCad v6.
+
+---
+
 ## Publications
 
 - HRI Student Design Competition – contributed to visual design, mechanical implementation, and software for robot submissions.
-- Co-authored studies:
   - ["Using Negative Affect to Reinforce Cooperation in Human-Robot Interactions" HRI2019](https://dl.acm.org/doi/10.5555/3378680.3378885)
   - ["Using Negative Affect to Reinforce Moral Norms in Casual Speech" HRI2021](https://dl.acm.org/doi/10.1145/3434074.3446952)
-  - ["The Uncanny Valley Manifests Even with Exposure to Robots, Strait, et al." HRI2020](https://dl.acm.org/doi/abs/10.1145/3371382.3378312)
+- ["The Uncanny Valley Manifests Even with Exposure to Robots, Strait, et al." HRI2020](https://dl.acm.org/doi/abs/10.1145/3371382.3378312)
 
 ---
 
