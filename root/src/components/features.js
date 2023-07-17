@@ -4,7 +4,7 @@ export const featureData = [
     imageAlt: "resume",
     imagePath: "resume.jpeg",
     title: "Resume",
-    link: "https://github.com/supersweet-dev/supersweet-dev.github.io/blob/main/resume.pdf",
+    link: "https://raw.githubusercontent.com/supersweet-dev/supersweet-dev.github.io/main/resume.pdf",
     buttonText: "Go!",
     buttonColor: "resume",
     maxWidth: "100%",

@@ -4,8 +4,6 @@ Edinburg, TX 78539 • [+1 (956) 897 – 3220](tel:956-897-3220) • [jim@supers
 
 [LinkedIn](https://www.linkedin.com/in/supersweet) | [GitHub](https://github.com/supersweet-dev) | [Website](https://supersweet.dev/)
 
-## Objective:
-
 Versatile Computer Science professional equipped with a broad skill set. Effective in any interdisciplinary team. Seeking to bring my strong coding abilities, visual design skills, and web management experience to a dynamic, holistic workspace. Uniquely poised to bridge communication gaps between departments, I aim to foster a cohesive and productive team environment.
 
 ---
@@ -21,13 +19,6 @@ Jan 2021 - May 2023, GPA 3.50
 Aug 2015 - Dec 2020
 
 **Relevant Courses:** Behavioral Modeling, Human Robot Interaction, Internet Development, Deep Learning
-
----
-
-## Skills
-
-- Coding: Proficient in C, C++, C#, Python, JS (React). Created a microgame showcased on [personal website](https://supersweet.dev/).
-- Circuit Design: Skilled in using KiCad v6. Designed a small board showcased [here](https://github.com/supersweet-dev/melodyous).
 
 ---
 
@@ -69,13 +60,19 @@ January 2021 - Present
 
 ---
 
+## Skills
+
+- Coding: Proficient in C, C++, C#, Python, JS (React).
+- Circuit Design: Skilled in using KiCad v6.
+
+---
+
 ## Publications
 
 - HRI Student Design Competition – contributed to visual design, mechanical implementation, and software for robot submissions.
-- Co-authored studies:
   - ["Using Negative Affect to Reinforce Cooperation in Human-Robot Interactions" HRI2019](https://dl.acm.org/doi/10.5555/3378680.3378885)
   - ["Using Negative Affect to Reinforce Moral Norms in Casual Speech" HRI2021](https://dl.acm.org/doi/10.1145/3434074.3446952)
-  - ["The Uncanny Valley Manifests Even with Exposure to Robots, Strait, et al." HRI2020](https://dl.acm.org/doi/abs/10.1145/3371382.3378312)
+- ["The Uncanny Valley Manifests Even with Exposure to Robots, Strait, et al." HRI2020](https://dl.acm.org/doi/abs/10.1145/3371382.3378312)
 
 ---
 
