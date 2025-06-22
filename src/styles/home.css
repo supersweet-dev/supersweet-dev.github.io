@@ -1,0 +1,63 @@
+/* Lock the entire viewport & clip overflow */
+html,
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: clip;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	z-index: 1;
+	text-align: center;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.title {
+	font-family: 'Rubik Dirt', system-ui;
+	font-size: clamp(2rem, 6vw, 5rem);
+	margin: 0;
+}
+
+.bio {
+	font-family: 'Zain', sans-serif;
+	font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+	margin-top: 1rem;
+}
+
+.social-links {
+	position: absolute;
+	bottom: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.heron {
+	position: absolute;
+	top: 60%;
+	width: 40vw;
+	max-width: 400px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+.heron.left {
+	left: 0;
+	transform: translateX(-60%) translateY(-50%) scaleX(-1);
+}
+.heron.right {
+	right: 0;
+	transform: translateX(60%) translateY(-50%);
+}

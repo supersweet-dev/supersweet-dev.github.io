@@ -1,9 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home.css';
 ---
 
 <BaseLayout>
-	<h3>warm water, lukewarm water</h3>
-	<p>mining gems</p>
-	<img width="400" src="/assets/images/heron.svg" alt="n3ds" />
+	<main>
+		<!-- Herons -->
+		<img
+			class="heron right"
+			src="/assets/images/heron.svg"
+			alt="Heron silhouette"
+		/>
+		<img
+			class="heron left"
+			src="/assets/images/heron.svg"
+			alt="Heron silhouette mirrored"
+		/>
+
+		<!-- Centered content -->
+		<div class="content">
+			<h1 class="title">saccharine</h1>
+			<p class="bio">
+				Gema Alvarez | They/Them | Full-Stack Developer | Visual Artist
+			</p>
+		</div>
+	</main>
 </BaseLayout>
