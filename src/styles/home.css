@@ -1,48 +1,41 @@
-/* Lock the entire viewport & clip overflow */
 html,
 body {
 	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: clip;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Zain', sans-serif;
+	color: var(--text-color);
 }
 
 main {
-	position: relative;
-	width: 100%;
-	height: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
 
-.content {
-	z-index: 1;
+/* Sticky Header */
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	width: 100%;
 	text-align: center;
-	padding: 1rem 2rem;
-	border-radius: 1rem;
+	padding: 2rem 1rem;
+	background-color: var(--secondary-color);
 }
 
-.title {
-	font-family: 'Rubik Dirt', system-ui;
-	font-size: clamp(2rem, 6vw, 5rem);
-	margin: 0;
-}
-
-.bio {
-	font-family: 'Zain', sans-serif;
-	font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
-	margin-top: 1rem;
-}
-
+/* Herons inside header */
 .heron {
-	position: absolute;
-	top: 55%;
+	position: fixed;
+	top: 30vh;
 	width: 40vw;
 	max-width: 400px;
 	transform: translateY(-50%);
 	pointer-events: none;
+	z-index: 999;
 }
+
 .heron.left {
 	left: 0;
 	transform: translateX(-60%) translateY(-50%) scaleX(-1);
@@ -51,6 +44,20 @@ main {
 	right: 0;
 	transform: translateX(60%) translateY(-50%);
 }
+
+/* Titles */
+.title {
+	font-family: 'Rubik Dirt', system-ui;
+	font-size: clamp(2rem, 6vw, 5rem);
+	margin: 0;
+}
+
+.bio {
+	font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+	margin-top: 1rem;
+}
+
+/* Socials */
 .social-links {
 	margin-top: 1.5rem;
 	display: flex;
@@ -60,9 +67,57 @@ main {
 
 .social-links a {
 	color: var(--text-color);
+	transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .social-links a:hover {
 	transform: scale(1.15);
 	color: var(--primary-color);
+}
+
+.social-icon {
+	width: 46px;
+	height: 46px;
+}
+
+/* Content */
+.content {
+	padding: 3rem 1rem;
+	max-width: 800px;
+	text-align: center;
+	z-index: 1;
+}
+
+/* Footer */
+.footer {
+	text-align: center;
+	padding: 0.2rem 2rem;
+	margin-bottom: 1rem;
+	font-family: 'Zain', sans-serif;
+	font-size: 24px;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	bottom: 0;
+	z-index: 10;
+	border-radius: 5rem;
+}
+
+.footer-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: text-bottom;
+	margin-left: 0.3em;
+	color: var(--primary-color);
+}
+
+/* Responsive tweaks */
+@media (max-width: 650px) {
+	.heron {
+		top: 20vh;
+	}
+
+	.social-icon {
+		width: 36px;
+		height: 36px;
+	}
 }
