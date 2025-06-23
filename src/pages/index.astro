@@ -1,6 +1,15 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { Icon } from 'astro-icon/components';
 import '../styles/home.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const githubUsername = 'supersweet-dev';
+const linkedinUsername = 'supersweet';
+const instagramUsername = 'gem.ki.du';
+const email = 'gema.ap97@gmail.com';
+const mailto = `mailto:${email}`;
+const resumeLink =
+	'https://github.com/supersweet-dev/supersweet-dev.github.io/blob/main/resume.pdf';
 ---
 
 <BaseLayout>
@@ -19,10 +28,49 @@ import '../styles/home.css';
 
 		<!-- Centered content -->
 		<div class="content">
-			<h1 class="title">saccharine</h1>
+			<p class="title">saccharine</p>
 			<p class="bio">
 				Gema Alvarez | They/Them | Full-Stack Developer | Visual Artist
 			</p>
+
+			<!-- Social Icons -->
+			<div class="social-links">
+				<a
+					href={mailto}
+					rel="nofollow noopener noreferrer"
+					aria-label="Email"
+				>
+					<Icon name="mdi:email-outline" width="24" height="24" />
+				</a>
+				<a
+					href={`https://github.com/${githubUsername}`}
+					target="_blank"
+					aria-label="GitHub"
+				>
+					<Icon name="mdi:github" width="24" height="24" />
+				</a>
+				<a
+					href={`https://www.linkedin.com/in/${linkedinUsername}`}
+					target="_blank"
+					aria-label="LinkedIn"
+				>
+					<Icon name="mdi:linkedin" width="24" height="24" />
+				</a>
+				<a
+					href={`https://www.instagram.com/${instagramUsername}`}
+					target="_blank"
+					aria-label="Instagram"
+				>
+					<Icon name="mdi:instagram" width="24" height="24" />
+				</a>
+				<a href={resumeLink} target="_blank" aria-label="Resume">
+					<Icon
+						name="mdi:file-document-outline"
+						width="24"
+						height="24"
+					/>
+				</a>
+			</div>
 		</div>
 	</main>
 </BaseLayout>

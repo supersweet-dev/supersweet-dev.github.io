@@ -35,19 +35,9 @@ main {
 	margin-top: 1rem;
 }
 
-.social-links {
-	position: absolute;
-	bottom: 20px;
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	z-index: 1;
-	pointer-events: none;
-}
-
 .heron {
 	position: absolute;
-	top: 60%;
+	top: 55%;
 	width: 40vw;
 	max-width: 400px;
 	transform: translateY(-50%);
@@ -60,4 +50,19 @@ main {
 .heron.right {
 	right: 0;
 	transform: translateX(60%) translateY(-50%);
+}
+.social-links {
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+	gap: 1.25rem;
+}
+
+.social-links a {
+	color: var(--text-color);
+}
+
+.social-links a:hover {
+	transform: scale(1.15);
+	color: var(--primary-color);
 }
