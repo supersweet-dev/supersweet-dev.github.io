@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
     push:
-        branches: [astro-build]
+        branches: 
+            - astro-build
     workflow_dispatch:
 
 permissions:
