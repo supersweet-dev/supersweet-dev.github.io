@@ -21,33 +21,11 @@ main {
 	z-index: 10;
 	width: 100%;
 	text-align: center;
-	padding: 1rem 1rem;
+	padding: 2rem 0;
 	background-color: var(--secondary-color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-/* Herons inside .header */
-.heron {
-	position: absolute;
-	top: 20%;
-	transform: translateY(-50%);
-	height: 150%; /* half of header height */
-	width: auto; /* keep aspect ratio */
-
-	pointer-events: none;
-	z-index: 0;
-}
-
-.heron.left {
-	left: 0;
-	transform: translateX(-60%) scaleX(-1);
-}
-
-.heron.right {
-	right: 0;
-	transform: translateX(60%);
 }
 
 /* Titles */
@@ -96,7 +74,7 @@ main {
 .footer {
 	text-align: center;
 	padding: 0.2rem 2rem;
-	margin-bottom: 1rem;
+	margin-bottom: 4rem;
 	font-family: 'Zain', sans-serif;
 	font-size: 16px;
 	background-color: var(--secondary-color);
@@ -115,7 +93,14 @@ main {
 }
 
 /* Responsive tweaks */
-@media (max-width: 650px) {
+@media (max-aspect-ratio: 3/4) {
+	.footer {
+		font-size: 26px;
+		margin-bottom: 8rem;
+	}
+	.content {
+		width: 90%;
+	}
 	.social-icon {
 		width: 36px;
 		height: 36px;
