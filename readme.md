@@ -1,6 +1,6 @@
 # Jaime "Gema" Alvarez Perez
 
-Edinburg, TX 78539 • [+52 (812) 078-7257](tel:+52 812-078-7257) • [gema.ap97@gmail.com](mailto:gema.ap97@gmail.com)
+Edinburg, TX 78539 • +52 (812) 078-7257 • [gema.ap97@gmail.com](mailto:gema.ap97@gmail.com)
 
 [LinkedIn](https://www.linkedin.com/in/supersweet) | [GitHub](https://github.com/supersweet-dev) | [Website](https://supersweet.dev/)
 
