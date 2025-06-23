@@ -21,28 +21,33 @@ main {
 	z-index: 10;
 	width: 100%;
 	text-align: center;
-	padding: 2rem 1rem;
+	padding: 1rem 1rem;
 	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/* Herons inside header */
+/* Herons inside .header */
 .heron {
-	position: fixed;
-	top: 30vh;
-	width: 40vw;
-	max-width: 400px;
+	position: absolute;
+	top: 20%;
 	transform: translateY(-50%);
+	height: 150%; /* half of header height */
+	width: auto; /* keep aspect ratio */
+
 	pointer-events: none;
-	z-index: 999;
+	z-index: 0;
 }
 
 .heron.left {
 	left: 0;
-	transform: translateX(-60%) translateY(-50%) scaleX(-1);
+	transform: translateX(-60%) scaleX(-1);
 }
+
 .heron.right {
 	right: 0;
-	transform: translateX(60%) translateY(-50%);
+	transform: translateX(60%);
 }
 
 /* Titles */
@@ -59,7 +64,6 @@ main {
 
 /* Socials */
 .social-links {
-	margin-top: 1.5rem;
 	display: flex;
 	justify-content: center;
 	gap: 1.25rem;
@@ -94,7 +98,7 @@ main {
 	padding: 0.2rem 2rem;
 	margin-bottom: 1rem;
 	font-family: 'Zain', sans-serif;
-	font-size: 24px;
+	font-size: 16px;
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
 	bottom: 0;
@@ -112,10 +116,6 @@ main {
 
 /* Responsive tweaks */
 @media (max-width: 650px) {
-	.heron {
-		top: 20vh;
-	}
-
 	.social-icon {
 		width: 36px;
 		height: 36px;
