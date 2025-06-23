@@ -1,4 +1,4 @@
-name: Deploy on Dispatch
+name: Deploy on Push
 
 on:
     push:
