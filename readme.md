@@ -1,88 +1,104 @@
 # Jaime A. Alvarez Perez
 
-Edinburg, TX 78539 • [+1 (956) 897 – 3220](tel:956-897-3220) • [jim@supersweet.dev](mailto:jim@supersweet.dev)
+Edinburg, TX 78539 • [+52 (812) 078-7257](tel:+52 812-078-7257) • [gema.ap97@gmail.com](mailto:gema.ap97@gmail.com)
 
 [LinkedIn](https://www.linkedin.com/in/supersweet) | [GitHub](https://github.com/supersweet-dev) | [Website](https://supersweet.dev/)
 
-Versatile Computer Science professional equipped with a broad skill set. Effective in any interdisciplinary team. Seeking to bring my strong coding abilities, visual design skills, and web management experience to a dynamic, holistic workspace. Uniquely poised to bridge communication gaps between departments, I aim to foster a cohesive and productive team environment.
-
----
-
-## Education
-
-**Master of Science in Computer Science**, The University of Texas Rio Grande Valley, Edinburg, TX
-
-Jan 2021 - May 2023, GPA 3.50
-
-**Bachelor of Science in Computer Science**, The University of Texas Rio Grande Valley, Edinburg, TX
-
-Aug 2015 - Dec 2020
-
-**Relevant Courses:** Behavioral Modeling, Human Robot Interaction, Internet Development, Deep Learning
+## They/Them | Multilingual Full-Stack Engineer | Advocate for Accessible Tech
 
 ---
 
 ## Experience
 
-##### USC Institute for Creative Technologies - Learning Sciences, Ben Nye, Full-Stack Development Intern
+**Aplos Creative – Grupo Cymez**
+_Software Engineer II_ | 08/2023 – Present
 
-June 2019 - August 2019, June 2021 - August 2021
+-   Served as principal engineer on a bilingual logistics dashboard used to monitor and respond to real-time threats across northern Mexico
+-   Designed flexible content tools for operators to log high-context events, and built alerting systems to notify clients of nearby incidents along active routes
+-   Scoped, built, and deployed major modules for data correlation, media handling, and multi-language notifications
 
-- Designed and deployed a user-friendly internal tool for editing complex, redundant XML scripts, streamlining the editing process and improving efficiency. [Hosted here.](http://author-tutor.surge.sh/)
-- Owned the progress display for mentor design on an educational app during my second internship, ensuring transparency and up-to-date tracking of the user's work. [Log here.](https://github.com/mentorpal/mentor-admin/commits/main?author=supersweet-dev)
+**USC Institute for Creative Technologies – Learning Sciences**
+_Full-Stack Developer (Summer Intern)_ | 2019, 2021
 
-##### PUEDE, Web Manager
+-   Developed an internal-use XML editing platform that accelerated content creation by 3× for AutoTutor instructional designers ([View Project](http://author-tutor.surge.sh/))
+-   Built an interactive progress tracker with contextual suggestions, reducing onboarding speed by 50% and improving lesson consistency ([See Code](https://github.com/mentorpal/mentor-admin/commits/main?author=supersweet-dev))
 
-January 2019 - April 2019
+**PUEDE RGV (Nonprofit Advocacy)**
+_Web Manager & Design Lead_ | 01/2019 – 04/2019 ([Live Site](https://rgvpuede.org/en/))
 
-- Managed initial setup of the website and created identity graphics.
-- Developed an efficient outreach system to expand the organization's reach.
-- [Logo, structure, and utilities still in use.](https://rgvpuede.org/en/)
+-   Launched the organization's first digital platform with multilingual WordPress site featuring bilingual resource locator
+-   Architected full tech stack (CMS, hosting, email), with platform still in active use after 5+ years
 
-##### UTRGV Social Systems Lab, Lab Assistant
+**UTRGV Department of Computer Science**
+_Teaching Assistant_ | 01/2021 – 08/2023
 
-September 2018 - September 2020
+-   Mentored 300+ students across robotics, game development (Unity), cloud architectures, and compiler design
+-   Automated grading workflows and managed software deployments, saving 15+ staff hours per week
 
-- Assisted Professor Megan K. Strait in research and lab-related tasks. Performed robot and system maintenance.
-- Contributed to the study on human-robot interactions.
+_Social Systems Lab Assistant_ | 09/2018 – 09/2020
 
----
-
-## Teaching Experience
-
-##### UTRGV Department of Computer Science, Teaching Assistant
-
-January 2021 - Present
-
-- Assisted in teaching Introductory Computer Science, Unity Game Development, Programming Languages, Robotics, Cloud Computing.
-- Facilitated interactive learning experiences for students.
-- Developed tools for easy deployment of specialized software for in-class use.
+-   Conducted human-robot interaction studies and supported experimental protocols
+-   Programmed behaviors for NAO robots used in social robotics research
 
 ---
 
 ## Skills
 
-- Coding: Proficient in C, C++, C#, Python, JS (React).
-- Circuit Design: Skilled in using KiCad v6.
+-   **Languages:** JavaScript, TypeScript, Python, C++, GDScript
+-   **Frontend:** Vue (Vuetify, Pinia), React, Vite, Tailwind CSS
+-   **Backend:** Node.js, Supabase, Prisma, REST APIs, Flask, Django, AWS
+-   **Databases:** SQL, NoSQL, Schema Design
+-   **Game Dev:** Godot Engine, Unity
+-   **Tools:** Docker, Git, Cypress
+-   **Design:** Figma, Affinity Designer, Brand Design
+-   **Languages:** Native fluency in English (US) and Spanish (MX)
 
 ---
 
-## Publications
+## Education
 
-- HRI Student Design Competition – contributed to visual design, mechanical implementation, and software for robot submissions.
-  - ["Using Negative Affect to Reinforce Cooperation in Human-Robot Interactions" HRI2019](https://dl.acm.org/doi/10.5555/3378680.3378885)
-  - ["Using Negative Affect to Reinforce Moral Norms in Casual Speech" HRI2021](https://dl.acm.org/doi/10.1145/3434074.3446952)
-- ["The Uncanny Valley Manifests Even with Exposure to Robots, Strait, et al." HRI2020](https://dl.acm.org/doi/abs/10.1145/3371382.3378312)
+**Master of Science in Computer Science**
+_The University of Texas Rio Grande Valley_ | 01/2021 – 05/2024
+Thesis: _Designing an Open Source Educational Platform for Students with ADHD and Dyslexia_
+
+**Bachelor of Science in Computer Science**
+_The University of Texas Rio Grande Valley_ | 08/2015 – 12/2020
+
+**UX/UI for Gaming Certification**
+_ELVTR_ | 10/2023 – 01/2024
+[View Certificate](https://elvtr.com/certificate/8e73bbfb46b64c409d283e40ecbdcada/)
+
+---
+
+## Leadership
+
+**UTRGV ACM Chapter**
+_President (2018), Vice President (2017), Secretary (2016)_
+
+-   Organized workshops and hackathons for 50+ members
+-   Built partnerships with faculty and industry contacts to expand professional opportunities
+
+---
+
+## Projects & Publications
+
+### ACM/IEEE International Conference on Human-Robot Interaction – Student Design Competition
+
+-   Designed visual identity, mechanical systems, and software architecture for two research robots
+-   Developed microcontroller-based control systems and autonomous behaviors
+-   Integrated sensor/actuator systems for emotionally expressive interactions
+-   ["Using Negative Affect to Reinforce Cooperation" (HRI 2019)](https://dl.acm.org/doi/10.5555/3378680.3378885)
+-   ["Using Negative Affect to Reinforce Moral Norms in Casual Speech" (HRI 2021)](https://dl.acm.org/doi/10.1145/3434074.3446952)
 
 ---
 
 ## Community Involvement
 
-- Judge, 2015/2016 FIRST LEGO League Robotics Competition in the RGV, Jan 2016
-- Mentor, Google Ignite CS, South Texas Preparatory Academy, May 2016
+-   Judge, 2015/2016 FIRST LEGO League Robotics Competition in the RGV, Jan 2016
+-   Mentor, Google Ignite CS, South Texas Preparatory Academy, May 2016
 
 ---
 
 ## Awards & Acknowledgments
 
-- 2019 CMD-IT/ACM Richard Tapia Celebration of Diversity in Computing Scholarship
+-   2019 CMD-IT/ACM Richard Tapia Celebration of Diversity in Computing Scholarship
