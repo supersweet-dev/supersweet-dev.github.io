@@ -10,6 +10,7 @@ export const GET: APIRoute = ({ params, request }: any) => {
 
 export const POST: APIRoute = async ({ request }: any) => {
 	const TMDB_API_KEY = import.meta.env.TMDB_API_KEY;
+	console.log('TMDB_API_KEY:', TMDB_API_KEY);
 	const reviews = await request.json();
 
 	const enriched = await Promise.all(
@@ -22,9 +23,7 @@ export const POST: APIRoute = async ({ request }: any) => {
 			const json = await res.json();
 			return {
 				...r,
-				poster: json?.results?.[0]?.poster_path
-					? `https://image.tmdb.org/t/p/w342${json.results[0].poster_path}`
-					: null,
+				tmdb: json,
 			};
 		})
 	);
