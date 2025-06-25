@@ -1,22 +1,10 @@
-// src/pages/api/enrich.ts
-export const POST = async ({ request }: any) => {
-	const data = await request.json();
+export function GET(request: Request) {
+	return new Response(`${request.method} request received`);
+}
 
-	return new Response(
-		JSON.stringify({
-			received: data,
-			message: 'POST handler is working!',
-		}),
-		{
-			headers: { 'Content-Type': 'application/json' },
-			status: 200,
-		}
-	);
-};
-
-// Optional GET for browser test
-export const GET = () =>
-	new Response('This endpoint only supports POST requests.', {
-		status: 405,
-		headers: { 'Content-Type': 'text/plain' },
+export async function POST(request: Request) {
+	const body = await request.json();
+	return new Response(JSON.stringify(body), {
+		headers: { 'Content-Type': 'application/json' },
 	});
+}
