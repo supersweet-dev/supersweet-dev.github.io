@@ -19,6 +19,8 @@ export const POST = async ({ request }: { request: Request }) => {
 		})
 	);
 
+	console.log('Enriched reviews:', enriched);
+
 	return new Response(JSON.stringify(enriched), {
 		headers: { 'Content-Type': 'application/json' },
 	});
