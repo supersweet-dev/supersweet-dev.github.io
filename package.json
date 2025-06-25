@@ -13,6 +13,10 @@
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/simple-icons": "^1.2.39",
     "astro": "^5.9.4",
-    "astro-icon": "^1.1.5"
+    "astro-icon": "^1.1.5",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/xml2js": "^0.4.14"
   }
 }
