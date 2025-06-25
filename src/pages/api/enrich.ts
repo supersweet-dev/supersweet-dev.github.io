@@ -3,32 +3,33 @@ import type { APIRoute } from 'astro';
 export const GET: APIRoute = ({ params, request }: any) => {
 	return new Response(
 		JSON.stringify({
-			message: 'This was a GET!',
+			message: 'This route does not support GET requests.',
 		})
 	);
 };
 
-export const POST: APIRoute = ({ request }: any) => {
-	return new Response(
-		JSON.stringify({
-			message: 'This was a POST!',
-		})
-	);
-};
+export const POST: APIRoute = async ({ request }: any) => {
+	const TMDB_API_KEY = import.meta.env.TMDB_API_KEY;
+	const reviews = await request.json();
 
-export const DELETE: APIRoute = ({ request }: any) => {
-	return new Response(
-		JSON.stringify({
-			message: 'This was a DELETE!',
+	const enriched = await Promise.all(
+		reviews.map(async (r: any) => {
+			const res = await fetch(
+				`https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(
+					r.title
+				)}&year=${r.year}`
+			);
+			const json = await res.json();
+			return {
+				...r,
+				poster: json?.results?.[0]?.poster_path
+					? `https://image.tmdb.org/t/p/w342${json.results[0].poster_path}`
+					: null,
+			};
 		})
 	);
-};
 
-// ALL matches any method that you haven't implemented.
-export const ALL: APIRoute = ({ request }: any) => {
-	return new Response(
-		JSON.stringify({
-			message: `This was a ${request.method}!`,
-		})
-	);
+	return new Response(JSON.stringify(enriched), {
+		headers: { 'Content-Type': 'application/json' },
+	});
 };
