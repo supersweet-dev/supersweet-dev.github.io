@@ -16,39 +16,43 @@ export const GET: APIRoute = async () => {
 		// Limit to most recent 10
 		const recent = Array.isArray(items) ? items.slice(0, 10) : [items];
 
-		const reviews = recent.map(async (item: any) => {
-			const tmdbId = item['tmdb:movieId'];
-			const movieDetailsUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?language=en-US`;
-			const details = await fetch(movieDetailsUrl, {
-				method: 'GET',
-				headers: {
-					accept: 'application/json',
-					Authorization: `Bearer ${TMDB_API_KEY}`,
-				},
-			});
-			if (!details.ok) {
-				console.error(
-					`TMDb request failed for ID ${tmdbId}`,
-					details.status
-				);
+		const reviews = await Promise.all(
+			recent.map(async (item: any) => {
+				const tmdbId = item['tmdb:movieId'];
+				const movieDetailsUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?language=en-US`;
+				const details = await fetch(movieDetailsUrl, {
+					method: 'GET',
+					headers: {
+						accept: 'application/json',
+						Authorization: `Bearer ${TMDB_API_KEY}`,
+					},
+				});
+				if (!details.ok) {
+					console.error(
+						`TMDb request failed for ID ${tmdbId}`,
+						details.status
+					);
+					return {
+						data: item,
+						title: item.title,
+						year: item.pubDate,
+						poster: null,
+						error: true,
+					};
+				}
+				const posterPath = (await details.json())['poster_path'];
+				const posterUrl = `${TMDB_IMAGE_BASE_URL}${posterPath}`;
 				return {
-					title: item.title,
-					year: item.pubDate,
-					poster: null,
-					error: true,
+					data: item,
+					title: item['letterboxd:filmTitle'],
+					year: item['letterboxd:filmYear'],
+					watchedAt: item['letterboxd:watchedDate'] ?? item.pubDate,
+					score: item['letterboxd:memberRating'],
+					poster: posterPath ? posterUrl : null,
+					link: item.link,
 				};
-			}
-			const posterPath = (await details.json())['poster_path'];
-			const posterUrl = `${TMDB_IMAGE_BASE_URL}${posterPath}`;
-			return {
-				title: item['letterboxd:filmTitle'],
-				year: item['letterboxd:filmYear'],
-				watchedAt: item['letterboxd:watchedDate'] ?? item.pubDate,
-				score: item['letterboxd:memberRating'],
-				poster: posterPath ? posterUrl : null,
-				link: item.link,
-			};
-		});
+			})
+		);
 
 		return new Response(JSON.stringify(reviews), {
 			headers: { 'Content-Type': 'application/json' },
