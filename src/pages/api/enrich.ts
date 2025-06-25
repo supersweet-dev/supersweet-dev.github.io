@@ -1,3 +1,7 @@
+export const GET = () =>
+	new Response('This endpoint only supports POST requests.', {
+		status: 405,
+	});
 export const POST = async ({ request }: { request: Request }) => {
 	const TMDB_API_KEY: string = import.meta.env.TMDB_API_KEY as string;
 	const reviews = await request.json();
