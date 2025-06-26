@@ -1,0 +1,17 @@
+---
+import { type Review } from '../types';
+const reviews = await fetch(new URL('/api/reviews', Astro.url), {
+	method: 'GET',
+})
+    .then((res) => res.json())
+    .then((data) => data as Review[]);
+---
+{
+    reviews.map(
+        (review) => (
+            review.error ? <></> : <div class="review">
+                <h3 class="review-title">{review.title}</h3>
+            </div>
+        )
+    )
+}

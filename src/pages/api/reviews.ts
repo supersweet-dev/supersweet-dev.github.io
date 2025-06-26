@@ -1,34 +1,10 @@
 import type { APIRoute } from 'astro';
 import { parseStringPromise } from 'xml2js';
+import type { Review, RSSItem } from '../../types/index.d.ts';
 
 const LETTERBOXD_RSS_URL = 'https://letterboxd.com/pentagrami/rss';
 const TMDB_API_KEY = import.meta.env.TMDB_API_KEY;
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w342';
-
-type Review =
-	| {
-			error: false;
-			title: string;
-			year: string;
-			watchedAt: string;
-			score: string;
-			poster: string | null;
-			link: string;
-	  }
-	| {
-			error: true;
-			status?: number;
-	  };
-
-type RSSItem = {
-	'tmdb:movieId': string;
-	'letterboxd:filmTitle': string;
-	'letterboxd:filmYear': string;
-	'letterboxd:watchedDate'?: string;
-	'letterboxd:memberRating': string;
-	link: string;
-	pubDate: string;
-};
 
 export const GET: APIRoute = async () => {
 	if (!TMDB_API_KEY) {

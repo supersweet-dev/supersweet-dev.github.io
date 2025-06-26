@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import '../styles/home.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ReviewShowcase from '../components/ReviewShowcase.astro';
 
 const githubUsername = 'supersweet-dev';
 const linkedinUsername = 'supersweet';
@@ -69,6 +70,9 @@ const resumeLink =
 				Feel free to check out my resume, or connect with me on social
 				media. Currently building out this site.
 			</p>
+			<ReviewShowcase client:load>
+				<div slot="fallback"><h1>LOADING...</h1></div>
+			</ReviewShowcase>
 		</div>
 		<footer class="footer">
 			© 2025 Gema Alvarez — Built with <a
