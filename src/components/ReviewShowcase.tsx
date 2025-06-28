@@ -1,15 +1,12 @@
-// React component to showcase reviews
 import type { Review } from '../types';
 import React, { useState, useEffect } from 'react';
+import '../styles/review-showcase.css';
 
-// Define props (optional `apiUrl` with a default value)
 interface ReviewShowcaseProps {
 	apiUrl?: string | URL;
 }
 
-const ReviewShowcase: React.FC<ReviewShowcaseProps> = ({
-	apiUrl = '/api/list',
-}) => {
+const ReviewShowcase: React.FC<ReviewShowcaseProps> = ({ apiUrl = '' }) => {
 	const [items, setItems] = useState<Review[]>([]);
 	const [loading, setLoading] = useState<boolean>(true);
 	const [error, setError] = useState<string | null>(null);
@@ -17,7 +14,7 @@ const ReviewShowcase: React.FC<ReviewShowcaseProps> = ({
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch(apiUrl);
+				const response = await fetch(apiUrl.toString());
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);
 				}
@@ -35,23 +32,47 @@ const ReviewShowcase: React.FC<ReviewShowcaseProps> = ({
 		};
 
 		fetchData();
-	}, [apiUrl]); // Re-fetches if `apiUrl` changes
+	}, [apiUrl]);
 
-	if (loading) {
-		return <div>Loading...</div>;
-	}
-
-	if (error) {
-		return <div>Error: {error}</div>;
-	}
+	if (loading) return <div>Loading reviews...</div>;
+	if (error) return <div>Error: {error}</div>;
 
 	return (
-		<ul>
+		<div className="review-grid">
 			{items.map(
 				(item, index) =>
-					!item.error && <li key={index}>{item.title}</li>
+					!item.error && (
+						<a
+							href={item.link}
+							key={index}
+							className="review-card"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{item.poster ? (
+								<img
+									src={item.poster}
+									alt={`Poster for ${item.title}`}
+									className="review-poster"
+								/>
+							) : (
+								<div className="poster-placeholder">
+									No Poster
+								</div>
+							)}
+							<div className="review-details">
+								<h3>
+									{item.title} ({item.year})
+								</h3>
+								<p>★ {item.score}</p>
+								<p className="watched">
+									Watched: {item.watchedAt}
+								</p>
+							</div>
+						</a>
+					)
 			)}
-		</ul>
+		</div>
 	);
 };
 
