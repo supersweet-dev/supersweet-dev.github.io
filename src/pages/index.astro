@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 import '../styles/home.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ReviewShowcase from '../components/ReviewShowcase';
 
 const githubUsername = 'supersweet-dev';
 const linkedinUsername = 'supersweet';
@@ -68,6 +69,17 @@ const resumeLink =
 			<p>
 				Feel free to check out my resume, or connect with me on social
 				media. Currently building out this site.
+			</p>
+			<ReviewShowcase
+				apiUrl={new URL('/api/reviews', Astro.url)}
+				client:load
+			>
+				<div slot="fallback"><h1>LOADING...</h1></div>
+			</ReviewShowcase>
+			<p>
+				The above reviews are fetched from my Letterboxd RSS feed, the
+				posters come from the TMDB API, and this data is fetched using
+				an edge function on refresh.
 			</p>
 		</div>
 		<footer class="footer">
