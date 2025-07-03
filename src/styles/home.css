@@ -18,7 +18,10 @@ main {
 .header-static {
 	width: 100%;
 	text-align: center;
-	padding: 2rem 0;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	padding-left: 0;
+	padding-right: 0;
 	background-color: var(--secondary);
 	display: flex;
 	flex-direction: column;
@@ -33,7 +36,7 @@ main {
 	width: 100%;
 	background-color: var(--secondary);
 	border-bottom: 8px solid var(--primary);
-	padding: 0.5rem 0;
+	padding: 1rem 0;
 	display: flex;
 	justify-content: center;
 }
