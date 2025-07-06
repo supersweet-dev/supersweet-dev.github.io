@@ -4,6 +4,7 @@ import '../styles/home.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ReviewShowcase from '../components/ReviewShowcase';
 import FillerContent from '../components/FillerContent.astro';
+import TarotBoard from 'velvet-tarocchi';
 
 const githubUsername = 'supersweet-dev';
 const linkedinUsername = 'supersweet';
@@ -65,13 +66,15 @@ const resumeLink =
 		</div>
 		<!-- Content -->
 		<div class="content">
-			<p>
-				This is my personal space. Here I showcase my work, share
-				thoughts, and document my journey as a developer and artist.
-			</p>
+			<p>This is my personal space. Here I showcase some of my demos.</p>
 			<p>
 				Feel free to check out my resume, or connect with me on social
 				media. Currently building out this site.
+			</p>
+			<p>
+				The following reviews are fetched from my Letterboxd RSS feed,
+				the posters come from the TMDB API, and this data is fetched
+				using an edge function on refresh.
 			</p>
 			<ReviewShowcase
 				apiUrl={new URL('/api/reviews', Astro.url)}
@@ -80,10 +83,15 @@ const resumeLink =
 				<div slot="fallback"><h1>LOADING...</h1></div>
 			</ReviewShowcase>
 			<p>
-				The above reviews are fetched from my Letterboxd RSS feed, the
-				posters come from the TMDB API, and this data is fetched using
-				an edge function on refresh.
+				This is a micro-app that I built a few years ago as a JQuery
+				demo to secure my first internship. It is a tarot board that
+				uses your birthday to seed the shuffle, to put a little of you
+				in it. I wrote each card's placement interpretation. This
+				current version is a React component that you can grab from <a
+					href="https://www.npmjs.com/package/velvet-tarocchi">npm</a
+				>.
 			</p>
+			<TarotBoard client:only="react" />
 		</div>
 		<footer class="footer">
 			© 2025 Gema Alvarez — Built with <a
