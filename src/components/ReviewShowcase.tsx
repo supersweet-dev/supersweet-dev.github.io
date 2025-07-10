@@ -117,21 +117,23 @@ const ReviewShowcase: React.FC<ReviewShowcaseProps> = ({ apiUrl = '' }) => {
 													({item.year})
 												</span>
 											</h3>
-											<div className="score-container">
-												<span className="score-label">
-													Rating:
-												</span>
-												<span className="score-value">
-													★ {item.score}
-												</span>
-											</div>
-											<div className="watched-container">
-												<span className="watched-label">
-													Watched:
-												</span>
-												<span className="watched-value">
-													{item.watchedAt}
-												</span>
+											<div className="review-stats-container">
+												<div className="score-container">
+													<span className="score-label">
+														Rating:
+													</span>
+													<span className="score-value">
+														★ {item.score}
+													</span>
+												</div>
+												<div className="watched-container">
+													<span className="watched-label">
+														Watched:
+													</span>
+													<span className="watched-value">
+														{item.watchedAt}
+													</span>
+												</div>
 											</div>
 										</div>
 									</a>

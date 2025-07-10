@@ -105,6 +105,11 @@
 	font-size: 1.8rem;
 }
 
+.review-stats-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .score-container,
 .watched-container {
 	display: flex;
@@ -220,28 +225,44 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-aspect-ratio: 3/4) {
 	.review-link {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto;
 		text-align: center;
 		padding: 0.75rem;
+
+		/* Add these to center poster */
+		place-items: center;
+	}
+
+	.poster-container {
+		width: 50%;
+		aspect-ratio: 2 / 3;
+		margin: 0 auto; /* Ensure full horizontal centering */
 	}
 
 	.review-details {
 		align-items: center;
 	}
 
-	.score-container,
-	.watched-container {
-		flex-direction: column;
-		align-items: center;
-		gap: 0.25rem;
+	.review-details h3 {
+		font-size: 1.4rem;
 	}
 
-	.poster-container {
-		width: 100%;
-		height: auto;
-		aspect-ratio: 2 / 3;
+	.year {
+		font-size: 1.4rem;
+	}
+	.review-stats-container {
+		flex-direction: row;
+		gap: 1rem;
+	}
+
+	.score-container,
+	.watched-container {
+		flex-direction: row;
+		align-items: center;
+		gap: 0.25rem;
+		font-size: 1.2rem;
 	}
 }
