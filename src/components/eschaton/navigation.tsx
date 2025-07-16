@@ -9,11 +9,9 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ data, setScreenId }) => {
 	if (data.type !== 'navigation') return <></>;
 	return (
-		<div className="navigation">
-			<a onClick={() => setScreenId(data.target)}>
-				<h4>{data.label}</h4>
-			</a>
-		</div>
+		<button className="navigation" onClick={() => setScreenId(data.target)}>
+			{data.label}
+		</button>
 	);
 };
 

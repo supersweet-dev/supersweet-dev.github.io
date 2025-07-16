@@ -1,0 +1,105 @@
+:root {
+	--eschaton-background: #ff6f61;
+	--eschaton-primary: #f1a668;
+	--eschaton-secondary: #de5d51;
+	--eschaton-text: #333;
+	--eschaton-accent: #f7d757;
+	--eschaton-border: #aa392f;
+	--charriot-primary: #ff6f61;
+	--charriot-secondary: #ffe0b2;
+	--charriot-text: #212121;
+	--charriot-accent: #ff7043;
+	--charriot-border: #ffab91;
+	--magician-primary: #8e44ad;
+	--magician-secondary: #dcdde1;
+	--magician-text: #2f3640;
+	--magician-accent: #9b59b6;
+	--magician-border: #c8d6e5;
+	--hermit-primary: #3498db;
+	--hermit-secondary: #ecf0f1;
+	--hermit-text: #2c3e50;
+	--hermit-accent: #2980b9;
+	--hermit-border: #bdc3c7;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Zain', sans-serif;
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.landing,
+.gm,
+.start {
+	background-color: var(--eschaton-background);
+	color: var(--eschaton-text);
+	max-width: 800px;
+	text-align: center;
+	z-index: 1;
+}
+
+.landing .navigation,
+.start .navigation,
+.gm .navigation {
+	background-color: var(--eschaton-primary);
+	color: var(--eschaton-border);
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	border: 3px solid var(--eschaton-border);
+	border-radius: 1rem;
+	box-shadow: 6px 6px 0 var(--eschaton-border);
+	cursor: pointer;
+	transition: transform 0.1s ease, background-color 0.2s ease;
+}
+.landing .navigation:hover,
+.start .navigation:hover,
+.gm .navigation:hover {
+	background-color: var(--eschaton-secondary);
+	color: var(--eschaton-primary);
+	border: 3px solid var(--eschaton-accent);
+	transform: translate(-3px, -3px);
+	box-shadow: 8px 8px 0 var(--eschaton-border);
+}
+
+.charriot .navigation {
+	background-color: var(--charriot-accent);
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	border: 3px solid var(--charriot-border);
+	border-radius: 1rem;
+	box-shadow: 6px 6px 0 var(--charriot-border);
+	cursor: pointer;
+	transition: transform 0.1s ease, background-color 0.2s ease;
+}
+.charriot .navigation:hover {
+	background-color: #fff;
+	color: var(--bg);
+	transform: translate(-3px, -3px);
+	box-shadow: 8px 8px 0 var(--charriot-accent);
+}
+
+.magician .navigation {
+	background-color: var(--magician-accent);
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	border: 3px solid var(--magician-border);
+	border-radius: 1rem;
+	box-shadow: 6px 6px 0 var(--magician-border);
+	cursor: pointer;
+	transition: transform 0.1s ease, background-color 0.2s ease;
+}
+.magician .navigation:hover {
+	background-color: #fff;
+	color: var(--bg);
+	transform: translate(-3px, -3px);
+	box-shadow: 8px 8px 0 var(--magician-accent);
+}

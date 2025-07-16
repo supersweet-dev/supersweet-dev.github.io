@@ -23,7 +23,11 @@ const EschatonMiniWizard = () => {
 		fetchScreen();
 	}, [screenId]);
 
-	return <ScreenManager screen={screen} setScreenId={setScreenId} />;
+	return (
+		<body className={`eschaton-mini ${screenId}`}>
+			<ScreenManager screen={screen} setScreenId={setScreenId} />
+		</body>
+	);
 };
 
 export default EschatonMiniWizard;
