@@ -1,0 +1,20 @@
+{
+	"name": "gm",
+	"structure": [
+		{
+			"type": "control",
+			"header": "Game Master's Guide",
+			"content": "As a Game Master, you'll create the world and the challenges your players will face. You'll set the stage, introduce NPCs, and guide the narrative. The game is designed to be flexible, allowing you to adapt the story based on player choices and actions."
+		},
+		{
+			"type": "navigation",
+			"target": "start",
+			"label": "Return"
+		},
+		{
+			"type": "control",
+			"header": "Game Master's Role",
+			"content": "Your role is to facilitate the game, ensuring that it runs smoothly and that players are engaged. Use the core moves and unique moves of each role to create engaging scenarios and conflicts."
+		}
+	]
+}

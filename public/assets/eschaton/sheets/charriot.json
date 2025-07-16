@@ -1,0 +1,115 @@
+{
+	"name": "landing",
+	"structure": [
+		{
+			"type": "characterprofile",
+			"role": "charriot",
+			"header": "The Charriot",
+			"content": "The Charriot is a warrior of instinct and motion, focusing on raw power and tactical moves.",
+			"image": "charriot.svg",
+			"stats": {
+				"body": 2,
+				"mind": -1,
+				"soul": 1
+			},
+			"hp": 6,
+			"placeholdernames": [
+				"Comus",
+				"Oriole",
+				"Bertram",
+				"Delilah",
+				"Gwiniviere",
+				"Hector",
+				"Isolde"
+			],
+			"pronouns": "they/them",
+			"placeholderdescription": "Your eyes are always on the horizon, you can see a glorious future laid before you, and you will take it."
+		},
+		{
+			"type": "origin",
+			"options": [
+				{
+					"label": "Orc",
+					"value": "orc",
+					"description": "Among the peoples of The Land, Orcs are recognized as the children of The Beast. They are of life and of blood, and they thrive on history and story.",
+					"move": {
+						"name": "Absolute",
+						"description": "When you slay an enemy, you may immediately attack another foe. If that enemy is slain, continue your onslaught."
+					}
+				},
+				{
+					"label": "Elf",
+					"value": "elf",
+					"description": "Personally created by The Flower, Elves are the first people of The Land. Not one has yet died of old age. They are of the wind, and it keeps their songs for them.",
+					"move": {
+						"name": "Dancer",
+						"description": "You can always close distance with an enemy in sight, you do not roll, and you do not trigger an enemy move. Describe your movement through the world."
+					}
+				},
+				{
+					"label": "Dwarf",
+					"value": "dwarf",
+					"description": "Born in the depths, from the dreams of The Stone, Dwarves have only recently emerged to the surface. They are artisans and engineers, materializing their ideas into reality.",
+					"move": {
+						"name": "Versatile",
+						"description": "You cannot be disarmed. Anything in your hand counts as a weapon. If you're barehanded, your fists will do."
+					}
+				}
+			]
+		},
+		{
+			"type": "background",
+			"options": [
+				{
+					"label": "City",
+					"value": "city",
+					"description": "You cut your teeth in organized society, within system and structure. You were trained as part of a historied tradition, but you have chosen to break from it.",
+					"move": {
+						"name": "Errant",
+						"description": "You have chosen to embark on a quest. Describe your objective. Whenever you would take life-ending damage while in service of your quest, your Hit Points become 1 instead. Or, you may choose death, and succeed in your current endeavor.  "
+					}
+				},
+				{
+					"label": "Town",
+					"value": "town",
+					"description": "You grew up in a small community, where everyone knew each other. You learned the value of cooperation and the strength of bonds.",
+					"move": {
+						"name": "Golden Child",
+						"description": "When you parley with someone from your home town, you may declare a full success . If you betray the trust of your people, lose this move until you regain your reputation."
+					}
+				},
+				{
+					"label": "Enclave",
+					"value": "enclave",
+					"description": "You were born and raised in a roaming band of warriors. You may now thrive in common society, but you still carry the unorthodox ways of your people.",
+					"move": {
+						"name": "Bloodthirsty",
+						"description": "If you have no armor or shields equiped, gain 1 Hit Point when slaying an enemy. This move may heal you above your maximum Hit Points. Lose all excess Hit Points once combat ends."
+					}
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "Class Moves",
+			"content": "The Charriot has access to the following core moves. You have access to these moves from the start of the game, and you may use them as often as you like, unless otherwise stated."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
+		}
+	]
+}

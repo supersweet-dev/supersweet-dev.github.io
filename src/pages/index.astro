@@ -4,6 +4,7 @@ import '../styles/home.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ReviewShowcase from '../components/ReviewShowcase';
 import FillerContent from '../components/FillerContent.astro';
+// @ts-expect-error
 import TarotBoard from 'velvet-tarocchi';
 
 const githubUsername = 'supersweet-dev';
@@ -92,6 +93,12 @@ const resumeLink =
 				>.
 			</p>
 			<TarotBoard client:only="react" />
+			<a href="/eschaton-mini"><h3>Eschaton Mini</h3></a>
+			<p>
+				eschaton mini is a tabletop roleplaying game I designed. The
+				game is designed for 3 players, with each player taking on a
+				unique role.
+			</p>
 		</div>
 		<footer class="footer">
 			© 2025 Gema Alvarez — Built with <a

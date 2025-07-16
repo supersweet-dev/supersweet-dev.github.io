@@ -1,0 +1,20 @@
+{
+	"name": "landing",
+	"structure": [
+		{
+			"type": "control",
+			"header": "eschaton mini",
+			"content": "This is a minified *Powered by the Apocalypse* (Meg and Vincent Baker) roleplaying game, inspired by and working off of *Dungeon World* (Sage LaTorra, Adam Koebel, currently owned by Phinlos LLC). "
+		},
+		{
+			"type": "control",
+			"header": "The Concept",
+			"content": "*eschaton mini* is a game built for short, tight campaings. Ideally, you'll play with a Game Master and a three-character party, each one embodying one of the three core roles, but you can play with more or fewer characters if you like. The background options should help each character feel unique. There is no mechanical character progression, but you may inhabit these characters as long as you like, nurturing their bonds and carving out their place in the world. You'll start with all your class moves available, but you'll find yourself stronger as you collect items or spells."
+		},
+		{
+			"type": "navigation",
+			"target": "start",
+			"label": "Get Started"
+		}
+	]
+}

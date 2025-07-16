@@ -1,0 +1,39 @@
+{
+	"name": "start",
+	"structure": [
+		{
+			"type": "control",
+			"header": "For Players",
+			"content": "*eschaton mini* features three core roles: The Charriot, a warrior of instict and motion; The Magician, keeper of arcane secrets; and The Hermit, deeply connected to the world. Each role comes with a list of core moves. You'll also choose a background and origin, granting you a unique move for each."
+		},
+		{
+			"type": "select",
+			"label": "Choose Your Role",
+			"submit": "Go!",
+			"options": [
+				{
+					"label": "The Charriot",
+					"value": "charriot"
+				},
+				{
+					"label": "The Magician",
+					"value": "magician"
+				},
+				{
+					"label": "The Hermit",
+					"value": "hermit"
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "For Game Masters",
+			"content": "As a Game Master, you'll create the world and the challenges your players will face. You'll set the stage, introduce NPCs, and guide the narrative. The game is designed to be flexible, allowing you to adapt the story based on player choices and actions. Use the core moves and the unique moves of each role to create engaging scenarios and conflicts. Below you will find a detailed guide on how to run the game, including moves, items, and spells that can be used to enhance the gameplay experience."
+		},
+		{
+			"type": "navigation",
+			"target": "gm",
+			"label": "Game Master's Guide"
+		}
+	]
+}
