@@ -25,7 +25,11 @@ const EschatonMiniWizard = () => {
 
 	return (
 		<body className={`eschaton-mini ${screenId}`}>
-			<ScreenManager screen={screen} setScreenId={setScreenId} />
+			<div className="eschaton-header">e•mini</div>
+			<div className="eschaton-content">
+				<ScreenManager screen={screen} setScreenId={setScreenId} />
+			</div>
+			<footer className="eschaton-footer">© 2025 Gema Alvarez</footer>
 		</body>
 	);
 };

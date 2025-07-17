@@ -1,10 +1,10 @@
 :root {
-	--eschaton-background: #ff6f61;
-	--eschaton-primary: #f1a668;
-	--eschaton-secondary: #de5d51;
-	--eschaton-text: #333;
-	--eschaton-accent: #f7d757;
-	--eschaton-border: #aa392f;
+	--eschaton-background: #01909e;
+	--eschaton-primary: #53b5d6;
+	--eschaton-secondary: #00635f;
+	--eschaton-text: #001400;
+	--eschaton-accent: #96d9ff;
+	--eschaton-border: #003825;
 	--charriot-primary: #ff6f61;
 	--charriot-secondary: #ffe0b2;
 	--charriot-text: #212121;
@@ -28,11 +28,51 @@ body {
 	padding: 0;
 	width: 100%;
 	min-height: 100vh;
-	font-family: 'Zain', sans-serif;
-	color: var(--text);
+	font-family: 'Azeret Mono', monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.eschaton-header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: var(--eschaton-secondary);
+	border-bottom: 8px solid var(--eschaton-accent);
+	padding: 0.5rem;
+	padding-left: 4rem;
+	text-align: left;
+	justify-content: left;
+	font-family: 'Honk', system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	color: var(--eschaton-accent);
+}
+.eschaton-footer {
+	text-align: center;
+	padding: 0.2rem 2rem;
+	margin: 4rem;
+	font-size: 0.8rem;
+	bottom: 0;
+	z-index: 10;
+	border-radius: 5rem;
+}
+.landing .eschaton-footer,
+.gm .eschaton-footer,
+.start .eschaton-footer {
+	color: var(--eschaton-border);
+	border: 4px solid var(--eschaton-border);
+}
+.eschaton-content {
+	max-width: 800px;
+	padding-bottom: 4rem;
 }
 
 .landing,
@@ -40,9 +80,33 @@ body {
 .start {
 	background-color: var(--eschaton-background);
 	color: var(--eschaton-text);
-	max-width: 800px;
 	text-align: center;
 	z-index: 1;
+}
+/* Control */
+.control {
+	padding: 1rem 2rem 0rem;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.control .control-title {
+	font-size: 3rem;
+	margin: 0;
+	font-family: 'Honk', system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Navigation */
+.navigation {
+	border-radius: 0.6rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 1.2rem;
+	margin: 1rem;
+	cursor: pointer;
+	transition: transform 0.1s ease, background-color 0.2s ease;
 }
 
 .landing .navigation,
@@ -50,13 +114,8 @@ body {
 .gm .navigation {
 	background-color: var(--eschaton-primary);
 	color: var(--eschaton-border);
-	font-size: 1.5rem;
-	padding: 1rem 2rem;
 	border: 3px solid var(--eschaton-border);
-	border-radius: 1rem;
-	box-shadow: 6px 6px 0 var(--eschaton-border);
-	cursor: pointer;
-	transition: transform 0.1s ease, background-color 0.2s ease;
+	box-shadow: 3px 3px 0 var(--eschaton-border);
 }
 .landing .navigation:hover,
 .start .navigation:hover,
@@ -65,41 +124,33 @@ body {
 	color: var(--eschaton-primary);
 	border: 3px solid var(--eschaton-accent);
 	transform: translate(-3px, -3px);
-	box-shadow: 8px 8px 0 var(--eschaton-border);
+	box-shadow: 6px 6px 0 var(--eschaton-border);
 }
 
 .charriot .navigation {
-	background-color: var(--charriot-accent);
-	color: #fff;
-	font-size: 1.5rem;
-	padding: 1rem 2rem;
+	background-color: var(--charriot-primary);
+	color: var(--charriot-border);
 	border: 3px solid var(--charriot-border);
-	border-radius: 1rem;
-	box-shadow: 6px 6px 0 var(--charriot-border);
-	cursor: pointer;
-	transition: transform 0.1s ease, background-color 0.2s ease;
+	box-shadow: 3px 3px 0 var(--charriot-border);
 }
 .charriot .navigation:hover {
-	background-color: #fff;
-	color: var(--bg);
+	background-color: var(--charriot-secondary);
+	color: var(--charriot-primary);
+	border: 3px solid var(--charriot-accent);
 	transform: translate(-3px, -3px);
-	box-shadow: 8px 8px 0 var(--charriot-accent);
+	box-shadow: 6px 6px 0 var(--charriot-border);
 }
 
 .magician .navigation {
-	background-color: var(--magician-accent);
-	color: #fff;
-	font-size: 1.5rem;
-	padding: 1rem 2rem;
+	background-color: var(--magician-primary);
+	color: var(--magician-border);
 	border: 3px solid var(--magician-border);
-	border-radius: 1rem;
-	box-shadow: 6px 6px 0 var(--magician-border);
-	cursor: pointer;
-	transition: transform 0.1s ease, background-color 0.2s ease;
+	box-shadow: 3px 3px 0 var(--magician-border);
 }
 .magician .navigation:hover {
-	background-color: #fff;
-	color: var(--bg);
+	background-color: var(--magician-secondary);
+	color: var(--magician-primary);
+	border: 3px solid var(--magician-accent);
 	transform: translate(-3px, -3px);
-	box-shadow: 8px 8px 0 var(--magician-accent);
+	box-shadow: 6px 6px 0 var(--magician-border);
 }

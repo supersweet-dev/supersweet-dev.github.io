@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import type { ScreenItem } from '../../types/eschaton';
 
 interface ControlProps {
@@ -9,8 +10,8 @@ const Control: React.FC<ControlProps> = ({ data }) => {
 	if (data.type !== 'control') return <></>;
 	return (
 		<div className="control">
-			<h3>{data.header}</h3>
-			<p>{data.content}</p>
+			<p className="control-title">{data.header}</p>
+			<ReactMarkdown>{data.content}</ReactMarkdown>
 		</div>
 	);
 };
