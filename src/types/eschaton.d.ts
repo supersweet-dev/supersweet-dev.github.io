@@ -2,7 +2,7 @@ export type Screen = {
 	name: string;
 	structure: ScreenItem[];
 };
-type ScreenId = 'landing' | 'charriot' | 'start' | 'gm' | 'hermit' | 'magician';
+type ScreenId = 'landing' | 'chariot' | 'start' | 'gm' | 'hermit' | 'magician';
 
 export type SelectOption = {
 	label: string;

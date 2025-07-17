@@ -17,7 +17,7 @@ const ScreenManager: React.FC<ScreenManagerProps> = ({
 }) => {
 	if (!screen) return <div>Loading...</div>;
 	return (
-		<div className={screen.name}>
+		<div className={`${screen.name}-container`}>
 			{
 				//for every item in screen.structure
 				screen.structure.map((item, index) => {
@@ -26,6 +26,15 @@ const ScreenManager: React.FC<ScreenManagerProps> = ({
 					}
 					if (item.type === 'control') {
 						return <Control key={index} data={item} />;
+					}
+					if (item.type === 'select' && setScreenId) {
+						return (
+							<Select
+								key={index}
+								data={item}
+								setScreenId={setScreenId}
+							/>
+						);
 					}
 					if (item.type === 'navigation' && setScreenId) {
 						return (

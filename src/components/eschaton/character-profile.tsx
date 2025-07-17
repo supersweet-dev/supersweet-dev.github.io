@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import type { ScreenItem } from '../../types/eschaton';
 
 interface CharacterProfileProps {
@@ -6,15 +6,82 @@ interface CharacterProfileProps {
 }
 
 const CharacterProfile: React.FC<CharacterProfileProps> = ({ data }) => {
-	if (data.type === 'characterprofile')
+	if (data.type !== 'characterprofile') return <></>;
+
+	const {
+		role,
+		header,
+		content,
+		image,
+		stats,
+		hp,
+		placeholdernames,
+		pronouns,
+		placeholderdescription,
+	} = data;
+
+	const randomNameIndex = Math.floor(Math.random() * placeholdernames.length);
+	const randomName = placeholdernames[randomNameIndex];
+	const hpArray = Array.from({ length: hp }, (_, i) => i + 1);
+	const renderStatIcon = (type: 'body' | 'mind' | 'soul') => {
+		const value = stats[type];
+		const symbol = type === 'body' ? '■' : type === 'mind' ? '▲' : '●';
+		const label = type[0].toUpperCase() + type.slice(1);
 		return (
-			<div className="character-profile">
-				<h1>This is a character sheet</h1>
-				<h3>{data.header}</h3>
-				<p>{data.content}</p>
+			<div className="stat">
+				<span className="symbol">{symbol}</span>
+				<span className="label">{label}</span>
+				<span className="value">
+					{value >= 0 ? `+${value}` : value}
+				</span>
 			</div>
 		);
-	else return <></>;
+	};
+
+	return (
+		<div className="character-profile">
+			<h2>{header}</h2>
+
+			<img
+				src={`/assets/eschaton/images/${image}`}
+				alt={`${header} illustration`}
+				className="character-image"
+			/>
+			<p className="description">{content}</p>
+
+			<div className="stats-section">
+				{renderStatIcon('body')}
+				{renderStatIcon('mind')}
+				{renderStatIcon('soul')}
+			</div>
+
+			<div className="hp-section">
+				<span className="hp-label">HP:</span>
+				<div className="hp-checklist">
+					{hpArray.map((_, i) => (
+						<input key={_ + i} type="checkbox" defaultChecked />
+					))}
+				</div>
+			</div>
+
+			<div className="inputs-section">
+				<div className="identity-section">
+					<label>
+						Name:
+						<input type="text" placeholder={randomName} />
+					</label>
+					<label>
+						Pronouns:
+						<input type="text" placeholder={pronouns} />
+					</label>
+				</div>
+				<label>
+					Description:
+					<textarea placeholder={placeholderdescription} rows={3} />
+				</label>
+			</div>
+		</div>
+	);
 };
 
 export default CharacterProfile;

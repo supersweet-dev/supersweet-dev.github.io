@@ -4,11 +4,11 @@ import type { Screen, ScreenId } from '../types/eschaton';
 import ScreenManager from './eschaton/screen-manager';
 
 const EschatonMiniWizard = () => {
-	const [screenId, setScreenId] = useState<ScreenId>('landing');
+	const [screenId, setScreenId] = useState<ScreenId>('chariot'); //Chariot for testing, 'landing' SHOULD BE DEFAULT
 	const [screen, setScreen] = useState<Screen | null>(null);
 	const screens: Record<ScreenId, string> = {
 		landing: '/assets/eschaton/sheets/landing.json',
-		charriot: '/assets/eschaton/sheets/charriot.json',
+		chariot: '/assets/eschaton/sheets/chariot.json',
 		magician: '/assets/eschaton/sheets/magician.json',
 		hermit: '/assets/eschaton/sheets/hermit.json',
 		start: '/assets/eschaton/sheets/start.json',
@@ -21,16 +21,26 @@ const EschatonMiniWizard = () => {
 	};
 	useEffect(() => {
 		fetchScreen();
+		const body = document.body;
+		body.className = `eschaton-mini ${screenId}`;
+		window.scrollTo({ top: 0, behavior: 'instant' });
 	}, [screenId]);
 
 	return (
-		<body className={`eschaton-mini ${screenId}`}>
-			<div className="eschaton-header">e•mini</div>
-			<div className="eschaton-content">
-				<ScreenManager screen={screen} setScreenId={setScreenId} />
+		<div className={`eschaton-wrapper`}>
+			<div
+				className="eschaton-header"
+				onClick={() => setScreenId('landing')}
+			>
+				e•mini
 			</div>
-			<footer className="eschaton-footer">© 2025 Gema Alvarez</footer>
-		</body>
+			<div className="eschaton-content">
+				<div className="eschaton-screen">
+					<ScreenManager screen={screen} setScreenId={setScreenId} />
+				</div>
+				<footer className="eschaton-footer">© 2025 Gema Alvarez</footer>
+			</div>
+		</div>
 	);
 };
 

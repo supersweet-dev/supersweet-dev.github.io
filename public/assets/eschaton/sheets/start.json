@@ -4,7 +4,7 @@
 		{
 			"type": "control",
 			"header": "For Players",
-			"content": "*eschaton mini* features three core roles: The Charriot, a warrior of instict and motion; The Magician, keeper of arcane secrets; and The Hermit, deeply connected to the world. Each role comes with a list of core moves. You'll also choose a background and origin, granting you a unique move for each."
+			"content": "*eschaton mini* features three core roles: The Chariot, a warrior of instict and motion; The Magician, keeper of arcane secrets; and The Hermit, deeply connected to the world. Each role comes with a list of core moves. You'll also choose a background and origin, granting you a unique move for each."
 		},
 		{
 			"type": "select",
@@ -12,8 +12,8 @@
 			"submit": "Go!",
 			"options": [
 				{
-					"label": "The Charriot",
-					"value": "charriot"
+					"label": "The Chariot",
+					"value": "chariot"
 				},
 				{
 					"label": "The Magician",

@@ -1,12 +1,12 @@
 {
-	"name": "landing",
+	"name": "chariot",
 	"structure": [
 		{
 			"type": "characterprofile",
-			"role": "charriot",
-			"header": "The Charriot",
-			"content": "The Charriot is a warrior of instinct and motion, focusing on raw power and tactical moves.",
-			"image": "charriot.svg",
+			"role": "chariot",
+			"header": "The Chariot",
+			"content": "The Chariot is a warrior of instinct and motion, focusing on raw power and tactical moves.",
+			"image": "chariot.svg",
 			"stats": {
 				"body": 2,
 				"mind": -1,
@@ -92,7 +92,7 @@
 		{
 			"type": "control",
 			"header": "Class Moves",
-			"content": "The Charriot has access to the following core moves. You have access to these moves from the start of the game, and you may use them as often as you like, unless otherwise stated."
+			"content": "The Chariot has access to the following core moves. You have access to these moves from the start of the game, and you may use them as often as you like, unless otherwise stated."
 		},
 		{
 			"type": "movelist",
