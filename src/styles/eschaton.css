@@ -1,28 +1,37 @@
-:root {
-	--eschaton-background: #01909e;
-	--eschaton-primary: #53b5d6;
-	--eschaton-secondary: #00635f;
-	--eschaton-text: #001400;
-	--eschaton-accent: #96d9ff;
-	--eschaton-border: #003825;
-	--chariot-background: #ff6c64;
-	--chariot-primary: #ff9e5b;
-	--chariot-secondary: #c22352;
-	--chariot-text: #350033;
-	--chariot-accent: #ffcd62;
-	--chariot-border: #7e0045;
-	--magician-background: #00a1ff;
-	--magician-primary: #a1b4ff;
-	--magician-secondary: #0074bc;
-	--magician-text: #001f28;
-	--magician-accent: #f9c5ff;
-	--magician-border: #004472;
-	--hermit-background: #00b466;
-	--hermit-primary: #00d8ad;
-	--hermit-secondary: #297602;
-	--hermit-text: #2a0000;
-	--hermit-accent: #00faf8;
-	--hermit-border: #2a3c00;
+.gm,
+.landing,
+.start {
+	--background: #01909e;
+	--primary: #53b5d6;
+	--secondary: #00635f;
+	--text: #001400;
+	--accent: #96d9ff;
+	--border: #003825;
+}
+.magician {
+	--background: #00a1ff;
+	--primary: #a1b4ff;
+	--secondary: #0074bc;
+	--text: #001f28;
+	--accent: #f9c5ff;
+	--border: #004472;
+}
+
+.chariot {
+	--background: #ff6c64;
+	--primary: #ff9e5b;
+	--secondary: #c22352;
+	--text: #350033;
+	--accent: #ffcd62;
+	--border: #7e0045;
+}
+.hermit {
+	--background: #00b466;
+	--primary: #00d8ad;
+	--secondary: #297602;
+	--text: #2a0000;
+	--accent: #00faf8;
+	--border: #2a3c00;
 }
 
 .eschaton-mini {
@@ -53,29 +62,11 @@
 	font-style: normal;
 	font-size: 2rem;
 	cursor: pointer;
+	background-color: var(--secondary);
+	border-bottom: 8px solid var(--accent);
+	color: var(--accent);
 }
-.landing .eschaton-header,
-.gm .eschaton-header,
-.start .eschaton-header {
-	background-color: var(--eschaton-secondary);
-	border-bottom: 8px solid var(--eschaton-accent);
-	color: var(--eschaton-accent);
-}
-.chariot .eschaton-header {
-	background-color: var(--chariot-secondary);
-	border-bottom: 8px solid var(--chariot-accent);
-	color: var(--chariot-accent);
-}
-.hermit .eschaton-header {
-	background-color: var(--hermit-secondary);
-	border-bottom: 8px solid var(--hermit-accent);
-	color: var(--hermit-accent);
-}
-.magician .eschaton-header {
-	background-color: var(--magician-secondary);
-	border-bottom: 8px solid var(--magician-accent);
-	color: var(--magician-accent);
-}
+
 .eschaton-footer {
 	text-align: center;
 	padding: 0.2rem 2rem;
@@ -85,24 +76,8 @@
 	z-index: 10;
 	border-radius: 5rem;
 	max-width: 400px !important;
-}
-.landing .eschaton-footer,
-.gm .eschaton-footer,
-.start .eschaton-footer {
-	color: var(--eschaton-border);
-	border: 4px solid var(--eschaton-border);
-}
-.chariot .eschaton-footer {
-	color: var(--chariot-border);
-	border: 4px solid var(--chariot-border);
-}
-.hermit .eschaton-footer {
-	color: var(--hermit-border);
-	border: 4px solid var(--hermit-border);
-}
-.magician .eschaton-footer {
-	color: var(--magician-border);
-	border: 4px solid var(--magician-border);
+	color: var(--border);
+	border: 4px solid var(--border);
 }
 .eschaton-wrapper {
 	width: 100%;
@@ -120,45 +95,24 @@
 
 .landing,
 .gm,
-.start {
-	background-color: var(--eschaton-background);
-	color: var(--eschaton-text);
-	text-align: center;
-	z-index: 1;
-}
-.chariot {
-	background-color: var(--chariot-background);
-	color: var(--chariot-text);
-	text-align: center;
-	z-index: 1;
-}
-.hermit {
-	background-color: var(--hermit-background);
-	color: var(--hermit-text);
-	text-align: center;
-	z-index: 1;
-}
+.start,
+.chariot,
+.hermit,
 .magician {
-	background-color: var(--magician-background);
-	color: var(--magician-text);
+	background-color: var(--background);
+	color: var(--text);
 	text-align: center;
 	z-index: 1;
 }
-.chariot .eschaton-screen {
-	border: var(--chariot-border) 4px solid;
-	border-radius: 1rem;
-	margin: 2rem;
-}
-.hermit .eschaton-screen {
-	border: var(--hermit-border) 4px solid;
-	border-radius: 1rem;
-	margin: 2rem;
-}
+
+.chariot .eschaton-screen,
+.hermit .eschaton-screen,
 .magician .eschaton-screen {
-	border: var(--magician-border) 4px solid;
+	border: var(--border) 4px solid;
 	border-radius: 1rem;
 	margin: 2rem;
 }
+
 /* Control */
 .control {
 	padding: 1rem 4rem 0rem;
@@ -175,12 +129,8 @@
 	font-style: normal;
 }
 
-.chariot .control {
-	text-align: left;
-}
-.hermit .control {
-	text-align: left;
-}
+.chariot .control,
+.hermit .control,
 .magician .control {
 	text-align: left;
 }
@@ -193,84 +143,30 @@
 	margin: 1rem;
 	cursor: pointer;
 	transition: transform 0.1s ease, background-color 0.2s ease;
+	background-color: var(--primary);
+	color: var(--border);
+	border: 3px solid var(--border);
+	box-shadow: 3px 3px 0 var(--border);
 }
 
-.landing .navigation,
-.start .navigation,
-.gm .navigation {
-	background-color: var(--eschaton-primary);
-	color: var(--eschaton-border);
-	border: 3px solid var(--eschaton-border);
-	box-shadow: 3px 3px 0 var(--eschaton-border);
-}
-.landing .navigation:hover,
-.start .navigation:hover,
-.gm .navigation:hover {
-	background-color: var(--eschaton-secondary);
-	color: var(--eschaton-primary);
-	border: 3px solid var(--eschaton-accent);
+.navigation:hover {
+	background-color: var(--secondary);
+	color: var(--primary);
+	border: 3px solid var(--accent);
 	transform: translate(-3px, -3px);
-	box-shadow: 6px 6px 0 var(--eschaton-border);
+	box-shadow: 6px 6px 0 var(--border);
 }
 
-.chariot .navigation {
-	background-color: var(--chariot-primary);
-	color: var(--chariot-border);
-	border: 3px solid var(--chariot-border);
-	box-shadow: 3px 3px 0 var(--chariot-border);
-}
-.chariot .navigation:hover {
-	background-color: var(--chariot-secondary);
-	color: var(--chariot-primary);
-	border: 3px solid var(--chariot-accent);
-	transform: translate(-3px, -3px);
-	box-shadow: 6px 6px 0 var(--chariot-border);
-}
-.hermit .navigation {
-	background-color: var(--hermit-primary);
-	color: var(--hermit-border);
-	border: 3px solid var(--hermit-border);
-	box-shadow: 3px 3px 0 var(--hermit-border);
-}
-.hermit .navigation:hover {
-	background-color: var(--hermit-secondary);
-	color: var(--hermit-primary);
-	border: 3px solid var(--hermit-accent);
-	transform: translate(-3px, -3px);
-	box-shadow: 6px 6px 0 var(--hermit-border);
-}
+/* Character Profile */
 
-.magician .navigation {
-	background-color: var(--magician-primary);
-	color: var(--magician-border);
-	border: 3px solid var(--magician-border);
-	box-shadow: 3px 3px 0 var(--magician-border);
-}
-.magician .navigation:hover {
-	background-color: var(--magician-secondary);
-	color: var(--magician-primary);
-	border: 3px solid var(--magician-accent);
-	transform: translate(-3px, -3px);
-	box-shadow: 6px 6px 0 var(--magician-border);
-}
 .character-profile {
 	padding: 1rem;
 	border-radius: 1rem;
 	font-family: 'Azeret Mono', monospace;
 	max-width: 600px;
 	margin: 0 auto;
-}
-.chariot .character-profile {
-	background-color: var(--chariot-background);
-	color: var(--chariot-text);
-}
-.hermit .character-profile {
-	background-color: var(--hermit-background);
-	color: var(--hermit-text);
-}
-.magician .character-profile {
-	background-color: var(--magician-background);
-	color: var(--magician-text);
+	background-color: var(--background);
+	color: var(--text);
 }
 
 .character-profile h2 {
@@ -306,19 +202,10 @@
 	width: 100px;
 	height: auto;
 	aspect-ratio: 1 / 1;
+	border: 4px solid var(--border);
+	color: var(--border);
 }
-.chariot .stat {
-	border: 4px solid var(--chariot-border);
-	color: var(--chariot-border);
-}
-.hermit .stat {
-	border: 4px solid var(--hermit-border);
-	color: var(--hermit-border);
-}
-.magician .stat {
-	border: 4px solid var(--magician-border);
-	color: var(--magician-border);
-}
+
 .stat,
 .symbol {
 	font-size: 1.6rem;
@@ -354,15 +241,7 @@
 	font-weight: bold;
 	font-size: 0.9rem;
 	margin-bottom: 1rem;
-}
-.chariot .inputs-section label {
-	color: var(--chariot-text);
-}
-.hermit .inputs-section label {
-	color: var(--hermit-text);
-}
-.magician .inputs-section label {
-	color: var(--magician-text);
+	color: var(--text);
 }
 
 .inputs-section input,
@@ -374,40 +253,15 @@
 	font-size: 1rem;
 	width: 100%;
 	box-sizing: border-box;
+	border: 2px solid var(--border);
+	background: var(--background);
+	color: var(--text);
 }
-.chariot .inputs-section input,
-.chariot .inputs-section textarea {
-	border: 2px solid var(--chariot-border);
-	background: var(--chariot-background);
-	color: var(--chariot-text);
-}
-.hermit .inputs-section input,
-.hermit .inputs-section textarea {
-	border: 2px solid var(--hermit-border);
-	background: var(--hermit-background);
-	color: var(--hermit-text);
-}
-.magician .inputs-section input,
-.magician .inputs-section textarea {
-	border: 2px solid var(--magician-border);
-	background: var(--magician-background);
-	color: var(--magician-text);
-}
+
 input::placeholder,
 textarea::placeholder {
 	opacity: 1;
-}
-.chariot input::placeholder,
-.chariot textarea::placeholder {
-	color: var(--chariot-secondary);
-}
-.hermit input::placeholder,
-.hermit textarea::placeholder {
-	color: var(--hermit-secondary);
-}
-.magician input::placeholder,
-.magician textarea::placeholder {
-	color: var(--magician-secondary);
+	color: var(--secondary);
 }
 
 .hp-section {
@@ -429,38 +283,23 @@ textarea::placeholder {
 	width: 1rem;
 	height: 1rem;
 	cursor: pointer;
-}
-.chariot .hp-checklist input[type='checkbox'] {
-	border: 2px solid var(--chariot-text);
-	background-color: var(--chariot-primary);
-}
-.hermit .hp-checklist input[type='checkbox'] {
-	border: 2px solid var(--hermit-text);
-	background-color: var(--hermit-primary);
-}
-.magician .hp-checklist input[type='checkbox'] {
-	border: 2px solid var(--magician-text);
-	background-color: var(--magician-primary);
+	border: 2px solid var(--text);
+	background-color: var(--primary);
 }
 
-.chariot .hp-checklist input[type='checkbox']:not(:checked) {
-	background-color: var(--chariot-border);
-}
-.hermit .hp-checklist input[type='checkbox']:not(:checked) {
-	background-color: var(--hermit-border);
-}
-.magician .hp-checklist input[type='checkbox']:not(:checked) {
-	background-color: var(--magician-border);
+.hp-checklist input[type='checkbox']:not(:checked) {
+	background-color: var(--border);
 }
 
 .character-trait {
 	padding: 0;
 	border-radius: 1rem;
 	font-family: 'Azeret Mono', monospace;
-	max-width: 600px;
+	max-width: 100%;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	text-align: left;
 }
 
@@ -499,51 +338,13 @@ select {
 	outline: none;
 	text-align: center;
 	text-align-last: center;
+	background-color: var(--primary);
+	color: var(--text);
+	border: 3px solid var(--border);
+	box-shadow: var(--secondary);
 }
 
-.chariot select {
-	background-color: var(--chariot-primary);
-	color: var(--chariot-text);
-	border: 3px solid var(--chariot-border);
-	box-shadow: var(--chariot-secondary);
-}
-.hermit select {
-	background-color: var(--hermit-primary);
-	color: var(--hermit-text);
-	border: 3px solid var(--hermit-border);
-	box-shadow: 3px 3px 0 var(--hermit-border);
-}
-.magician select {
-	background-color: var(--magician-primary);
-	color: var(--magician-text);
-	border: 3px solid var(--magician-border);
-	box-shadow: 3px 3px 0 var(--magician-border);
-}
-
-.chariot select:hover {
-	background-color: var(--chariot-accent);
-	color: var(--chariot-border);
-}
-.hermit select:hover {
-	background-color: var(--hermit-accent);
-	color: var(--hermit-border);
-}
-.magician select:hover {
-	background-color: var(--magician-accent);
-	color: var(--magician-border);
-}
-
-.landing select,
-.gm select,
-.start select {
-	background-color: var(--eschaton-primary);
-	color: var(--eschaton-text);
-	border: 3px solid var(--eschaton-border);
-	box-shadow: 3px 3px 0 var(--eschaton-border);
-}
-.landing select:hover,
-.gm select:hover,
-.start select:hover {
-	background-color: var(--eschaton-accent);
-	color: var(--eschaton-border);
+select:hover {
+	background-color: var(--accent);
+	color: var(--border);
 }
