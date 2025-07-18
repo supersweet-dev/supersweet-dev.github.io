@@ -110,6 +110,28 @@
 					"description": "This is a placeholder move description. Replace with actual move details."
 				}
 			]
+		},
+		{
+			"type": "control",
+			"header": "Basic Moves",
+			"content": "All players have access to the following basic moves. These moves are available to all characters, regardless of their role or background. Use them to interact with the world and resolve conflicts."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
 		}
 	]
 }

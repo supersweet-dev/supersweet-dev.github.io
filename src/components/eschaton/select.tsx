@@ -18,7 +18,7 @@ const Select: React.FC<SelectProps> = ({ data, setScreenId }) => {
 	};
 
 	return (
-		<div>
+		<div className="select-wrapper">
 			<label htmlFor={data.label}>{data.label}</label>
 			<select name={data.label} value={selected} onChange={handleChange}>
 				<option value="" disabled>

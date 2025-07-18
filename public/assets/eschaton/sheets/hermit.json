@@ -1,0 +1,137 @@
+{
+	"name": "hermit",
+	"structure": [
+		{
+			"type": "characterprofile",
+			"role": "hermit",
+			"header": "The Hermit",
+			"content": "The Hermit holds a strong soul, with roots entwinned into the tree of life.",
+			"image": "hermit.svg",
+			"stats": {
+				"body": -1,
+				"mind": 1,
+				"soul": 2
+			},
+			"hp": 3,
+			"placeholdernames": [
+				"Dandelion",
+				"Mistral",
+				"Erlenmeyer",
+				"Fruscht",
+				"Northern Jack",
+				"Saltpeter",
+				"Remus"
+			],
+			"pronouns": "they/them",
+			"placeholderdescription": "Your staff is glimmering with crystals that carry the wills of the departed. You are their keeper, and their reaper."
+		},
+		{
+			"type": "origin",
+			"options": [
+				{
+					"label": "Orc",
+					"value": "orc",
+					"description": "Among the peoples of The Land, Orcs are recognized as the children of The Beast. They are of life and of blood, and they thrive on history and story.",
+					"move": {
+						"name": "Refreshing",
+						"description": "When you cast a spell:\n* On a mixed success, recover 2 HP.\n* On a full success, you may instead heal a creature in your line of sight for 2 HP.\n* On a failure, you lose connection to the weave, this move is disabled until your next rest."
+					}
+				},
+				{
+					"label": "Elf",
+					"value": "elf",
+					"description": "Personally created by The Flower, Elves are the first people of The Land. Not one has yet died of old age. They are of the wind, and it keeps their songs for them.",
+					"move": {
+						"name": "Hollistic",
+						"description": "You may treat all creatures as animals for the purpose of abilities, moves, and spells.\n(For example, Speak With Animals allows communication with any creature, no matter how strange.)"
+					}
+				},
+				{
+					"label": "Dwarf",
+					"value": "dwarf",
+					"description": "Born in the depths, from the dreams of The Stone, Dwarves have only recently emerged to the surface. They are artisans and engineers, materializing their ideas into reality.",
+					"move": {
+						"name": "Thanatologist",
+						"description": "When you loot a fallen enemy you personally downed, roll +Weird instead of +Mind.\n* On a success treat this as a full success on the loot roll.\n* On a 10+, you also uncover their life rune—a symbol of who they were. You may spend it to invoke a powerful effect of the GM's choice.\n* On a miss, a specter of death will follow you until you are ritually cleansed."
+					}
+				}
+			]
+		},
+		{
+			"type": "background",
+			"options": [
+				{
+					"label": "City",
+					"value": "city",
+					"description": "You cut your teeth in organized society, within system and structure. You were trained as part of a historied tradition, but you have chosen to break from it.",
+					"move": {
+						"name": "Pious",
+						"description": "Describe the church where you took your vows: its deity, its core tenet, and the service you still uphold.\nWhen you discern realities, a full success comes with a revelation from your god.\nIf you act against your vows, lose this move until you perform an act of atonement. "
+					}
+				},
+				{
+					"label": "Town",
+					"value": "town",
+					"description": "You grew up in a small community, where everyone knew each other. You learned the value of cooperation and the strength of bonds.",
+					"move": {
+						"name": "Wanderer",
+						"description": "Your body is adapted to nature's rhythms.\nWhen you make a refuge roll in the wilderness, you may choose a full success instead of rolling."
+					}
+				},
+				{
+					"label": "Enclave",
+					"value": "enclave",
+					"description": "You were born and raised in a roaming band of warriors. You may now thrive in common society, but you still carry the unorthodox ways of your people.",
+					"move": {
+						"name": "Wildling",
+						"description": "When others would create a companion, instead describe your animal form.\nAdd +1 to two of its stats. You may switch between your forms at will."
+					}
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "Class Moves",
+			"content": "The Hermit has access to the following core moves. You have access to these moves from the start of the game, and you may use them as often as you like, unless otherwise stated."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "Basic Moves",
+			"content": "All players have access to the following basic moves. These moves are available to all characters, regardless of their role or background. Use them to interact with the world and resolve conflicts."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
+		}
+	]
+}

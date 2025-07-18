@@ -26,11 +26,11 @@ const CharacterProfile: React.FC<CharacterProfileProps> = ({ data }) => {
 	const renderStatIcon = (type: 'body' | 'mind' | 'soul') => {
 		const value = stats[type];
 		const symbol = type === 'body' ? '■' : type === 'mind' ? '▲' : '●';
-		const label = type[0].toUpperCase() + type.slice(1);
+
 		return (
 			<div className="stat">
 				<span className="symbol">{symbol}</span>
-				<span className="label">{label}</span>
+				<span className="label">{type}</span>
 				<span className="value">
 					{value >= 0 ? `+${value}` : value}
 				</span>
@@ -48,22 +48,6 @@ const CharacterProfile: React.FC<CharacterProfileProps> = ({ data }) => {
 				className="character-image"
 			/>
 			<p className="description">{content}</p>
-
-			<div className="stats-section">
-				{renderStatIcon('body')}
-				{renderStatIcon('mind')}
-				{renderStatIcon('soul')}
-			</div>
-
-			<div className="hp-section">
-				<span className="hp-label">HP:</span>
-				<div className="hp-checklist">
-					{hpArray.map((_, i) => (
-						<input key={_ + i} type="checkbox" defaultChecked />
-					))}
-				</div>
-			</div>
-
 			<div className="inputs-section">
 				<div className="identity-section">
 					<label>
@@ -79,6 +63,19 @@ const CharacterProfile: React.FC<CharacterProfileProps> = ({ data }) => {
 					Description:
 					<textarea placeholder={placeholderdescription} rows={3} />
 				</label>
+			</div>
+			<div className="hp-section">
+				<span className="hp-label">HP:</span>
+				<div className="hp-checklist">
+					{hpArray.map((_, i) => (
+						<input key={_ + i} type="checkbox" defaultChecked />
+					))}
+				</div>
+			</div>
+			<div className="stats-section">
+				{renderStatIcon('body')}
+				{renderStatIcon('mind')}
+				{renderStatIcon('soul')}
 			</div>
 		</div>
 	);

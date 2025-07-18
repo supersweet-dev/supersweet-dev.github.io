@@ -4,7 +4,7 @@ import type { Screen, ScreenId } from '../types/eschaton';
 import ScreenManager from './eschaton/screen-manager';
 
 const EschatonMiniWizard = () => {
-	const [screenId, setScreenId] = useState<ScreenId>('chariot'); //Chariot for testing, 'landing' SHOULD BE DEFAULT
+	const [screenId, setScreenId] = useState<ScreenId>('landing');
 	const [screen, setScreen] = useState<Screen | null>(null);
 	const screens: Record<ScreenId, string> = {
 		landing: '/assets/eschaton/sheets/landing.json',
@@ -30,7 +30,7 @@ const EschatonMiniWizard = () => {
 		<div className={`eschaton-wrapper`}>
 			<div
 				className="eschaton-header"
-				onClick={() => setScreenId('landing')}
+				onClick={() => setScreenId('start')}
 			>
 				e•mini
 			</div>

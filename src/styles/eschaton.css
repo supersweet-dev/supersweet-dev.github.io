@@ -11,18 +11,18 @@
 	--chariot-text: #350033;
 	--chariot-accent: #ffcd62;
 	--chariot-border: #7e0045;
-	--magician-background: #f3e5f5;
-	--magician-primary: #8e44ad;
-	--magician-secondary: #dcdde1;
-	--magician-text: #2f3640;
-	--magician-accent: #9b59b6;
-	--magician-border: #c8d6e5;
-	--hermit-background: #f0f4f8;
-	--hermit-primary: #3498db;
-	--hermit-secondary: #ecf0f1;
-	--hermit-text: #2c3e50;
-	--hermit-accent: #2980b9;
-	--hermit-border: #bdc3c7;
+	--magician-background: #00a1ff;
+	--magician-primary: #a1b4ff;
+	--magician-secondary: #0074bc;
+	--magician-text: #001f28;
+	--magician-accent: #f9c5ff;
+	--magician-border: #004472;
+	--hermit-background: #00b466;
+	--hermit-primary: #00d8ad;
+	--hermit-secondary: #297602;
+	--hermit-text: #2a0000;
+	--hermit-accent: #00faf8;
+	--hermit-border: #2a3c00;
 }
 
 .eschaton-mini {
@@ -66,6 +66,16 @@
 	border-bottom: 8px solid var(--chariot-accent);
 	color: var(--chariot-accent);
 }
+.hermit .eschaton-header {
+	background-color: var(--hermit-secondary);
+	border-bottom: 8px solid var(--hermit-accent);
+	color: var(--hermit-accent);
+}
+.magician .eschaton-header {
+	background-color: var(--magician-secondary);
+	border-bottom: 8px solid var(--magician-accent);
+	color: var(--magician-accent);
+}
 .eschaton-footer {
 	text-align: center;
 	padding: 0.2rem 2rem;
@@ -74,7 +84,7 @@
 	bottom: 0;
 	z-index: 10;
 	border-radius: 5rem;
-	width: 600px;
+	max-width: 400px !important;
 }
 .landing .eschaton-footer,
 .gm .eschaton-footer,
@@ -85,6 +95,14 @@
 .chariot .eschaton-footer {
 	color: var(--chariot-border);
 	border: 4px solid var(--chariot-border);
+}
+.hermit .eschaton-footer {
+	color: var(--hermit-border);
+	border: 4px solid var(--hermit-border);
+}
+.magician .eschaton-footer {
+	color: var(--magician-border);
+	border: 4px solid var(--magician-border);
 }
 .eschaton-wrapper {
 	width: 100%;
@@ -114,14 +132,36 @@
 	text-align: center;
 	z-index: 1;
 }
+.hermit {
+	background-color: var(--hermit-background);
+	color: var(--hermit-text);
+	text-align: center;
+	z-index: 1;
+}
+.magician {
+	background-color: var(--magician-background);
+	color: var(--magician-text);
+	text-align: center;
+	z-index: 1;
+}
 .chariot .eschaton-screen {
 	border: var(--chariot-border) 4px solid;
 	border-radius: 1rem;
 	margin: 2rem;
 }
+.hermit .eschaton-screen {
+	border: var(--hermit-border) 4px solid;
+	border-radius: 1rem;
+	margin: 2rem;
+}
+.magician .eschaton-screen {
+	border: var(--magician-border) 4px solid;
+	border-radius: 1rem;
+	margin: 2rem;
+}
 /* Control */
 .control {
-	padding: 1rem 2rem 0rem;
+	padding: 1rem 4rem 0rem;
 	font-size: 1rem;
 	margin: 0;
 }
@@ -133,6 +173,16 @@
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
+}
+
+.chariot .control {
+	text-align: left;
+}
+.hermit .control {
+	text-align: left;
+}
+.magician .control {
+	text-align: left;
 }
 
 /* Navigation */
@@ -176,6 +226,19 @@
 	transform: translate(-3px, -3px);
 	box-shadow: 6px 6px 0 var(--chariot-border);
 }
+.hermit .navigation {
+	background-color: var(--hermit-primary);
+	color: var(--hermit-border);
+	border: 3px solid var(--hermit-border);
+	box-shadow: 3px 3px 0 var(--hermit-border);
+}
+.hermit .navigation:hover {
+	background-color: var(--hermit-secondary);
+	color: var(--hermit-primary);
+	border: 3px solid var(--hermit-accent);
+	transform: translate(-3px, -3px);
+	box-shadow: 6px 6px 0 var(--hermit-border);
+}
 
 .magician .navigation {
 	background-color: var(--magician-primary);
@@ -201,9 +264,17 @@
 	background-color: var(--chariot-background);
 	color: var(--chariot-text);
 }
+.hermit .character-profile {
+	background-color: var(--hermit-background);
+	color: var(--hermit-text);
+}
+.magician .character-profile {
+	background-color: var(--magician-background);
+	color: var(--magician-text);
+}
 
 .character-profile h2 {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin-bottom: 0.5rem;
 	margin-top: 0;
 	font-family: 'Honk', system-ui;
@@ -240,9 +311,17 @@
 	border: 4px solid var(--chariot-border);
 	color: var(--chariot-border);
 }
+.hermit .stat {
+	border: 4px solid var(--hermit-border);
+	color: var(--hermit-border);
+}
+.magician .stat {
+	border: 4px solid var(--magician-border);
+	color: var(--magician-border);
+}
 .stat,
 .symbol {
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 
 .value {
@@ -274,26 +353,61 @@
 	text-align: left;
 	font-weight: bold;
 	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.chariot .inputs-section label {
 	color: var(--chariot-text);
+}
+.hermit .inputs-section label {
+	color: var(--hermit-text);
+}
+.magician .inputs-section label {
+	color: var(--magician-text);
 }
 
 .inputs-section input,
 .inputs-section textarea {
 	margin-top: 0.25rem;
 	padding: 0.5rem;
-	border: 2px solid var(--chariot-border);
 	border-radius: 0.5rem;
-	background: var(--chariot-background);
-	color: var(--chariot-text);
 	font-family: inherit;
 	font-size: 1rem;
 	width: 100%;
 	box-sizing: border-box;
 }
+.chariot .inputs-section input,
+.chariot .inputs-section textarea {
+	border: 2px solid var(--chariot-border);
+	background: var(--chariot-background);
+	color: var(--chariot-text);
+}
+.hermit .inputs-section input,
+.hermit .inputs-section textarea {
+	border: 2px solid var(--hermit-border);
+	background: var(--hermit-background);
+	color: var(--hermit-text);
+}
+.magician .inputs-section input,
+.magician .inputs-section textarea {
+	border: 2px solid var(--magician-border);
+	background: var(--magician-background);
+	color: var(--magician-text);
+}
 input::placeholder,
 textarea::placeholder {
-	color: var(--chariot-secondary); /* or any color you want */
-	opacity: 1; /* optional: override browser default */
+	opacity: 1;
+}
+.chariot input::placeholder,
+.chariot textarea::placeholder {
+	color: var(--chariot-secondary);
+}
+.hermit input::placeholder,
+.hermit textarea::placeholder {
+	color: var(--hermit-secondary);
+}
+.magician input::placeholder,
+.magician textarea::placeholder {
+	color: var(--magician-secondary);
 }
 
 .hp-section {
@@ -301,6 +415,8 @@ textarea::placeholder {
 	align-items: center;
 	gap: 0.5rem;
 	font-weight: bold;
+	font-size: 1.2rem;
+	margin: 1rem;
 }
 
 .hp-checklist {
@@ -312,12 +428,122 @@ textarea::placeholder {
 	appearance: none;
 	width: 1rem;
 	height: 1rem;
-	border: 2px solid var(--chariot-text);
-	background-color: var(--chariot-primary);
-
 	cursor: pointer;
 }
+.chariot .hp-checklist input[type='checkbox'] {
+	border: 2px solid var(--chariot-text);
+	background-color: var(--chariot-primary);
+}
+.hermit .hp-checklist input[type='checkbox'] {
+	border: 2px solid var(--hermit-text);
+	background-color: var(--hermit-primary);
+}
+.magician .hp-checklist input[type='checkbox'] {
+	border: 2px solid var(--magician-text);
+	background-color: var(--magician-primary);
+}
 
-.hp-checklist input[type='checkbox']:not(:checked) {
+.chariot .hp-checklist input[type='checkbox']:not(:checked) {
 	background-color: var(--chariot-border);
+}
+.hermit .hp-checklist input[type='checkbox']:not(:checked) {
+	background-color: var(--hermit-border);
+}
+.magician .hp-checklist input[type='checkbox']:not(:checked) {
+	background-color: var(--magician-border);
+}
+
+.character-trait {
+	padding: 0;
+	border-radius: 1rem;
+	font-family: 'Azeret Mono', monospace;
+	max-width: 600px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.trait-label {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+.trait-description {
+	padding: 1rem 4rem 0rem;
+}
+
+.move-details {
+	padding: 1rem 4rem 0rem;
+	font-size: 1rem;
+	margin: 0;
+	text-align: left;
+}
+
+.select-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	max-width: 100%;
+	align-items: center;
+}
+
+select {
+	appearance: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	text-align-last: center;
+}
+
+.chariot select {
+	background-color: var(--chariot-primary);
+	color: var(--chariot-text);
+	border: 3px solid var(--chariot-border);
+	box-shadow: var(--chariot-secondary);
+}
+.hermit select {
+	background-color: var(--hermit-primary);
+	color: var(--hermit-text);
+	border: 3px solid var(--hermit-border);
+	box-shadow: 3px 3px 0 var(--hermit-border);
+}
+.magician select {
+	background-color: var(--magician-primary);
+	color: var(--magician-text);
+	border: 3px solid var(--magician-border);
+	box-shadow: 3px 3px 0 var(--magician-border);
+}
+
+.chariot select:hover {
+	background-color: var(--chariot-accent);
+	color: var(--chariot-border);
+}
+.hermit select:hover {
+	background-color: var(--hermit-accent);
+	color: var(--hermit-border);
+}
+.magician select:hover {
+	background-color: var(--magician-accent);
+	color: var(--magician-border);
+}
+
+.landing select,
+.gm select,
+.start select {
+	background-color: var(--eschaton-primary);
+	color: var(--eschaton-text);
+	border: 3px solid var(--eschaton-border);
+	box-shadow: 3px 3px 0 var(--eschaton-border);
+}
+.landing select:hover,
+.gm select:hover,
+.start select:hover {
+	background-color: var(--eschaton-accent);
+	color: var(--eschaton-border);
 }

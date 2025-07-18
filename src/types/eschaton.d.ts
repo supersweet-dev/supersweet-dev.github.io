@@ -15,7 +15,7 @@ export type StatBlock = {
 	soul: number;
 };
 
-export type Move = {
+export type PlayMove = {
 	name: string;
 	description: string;
 };
@@ -24,7 +24,7 @@ export type Trait = {
 	label: string;
 	value: string;
 	description: string;
-	move: Move;
+	move: PlayMove;
 };
 
 export type ScreenItem =
@@ -65,5 +65,5 @@ export type ScreenItem =
 	  }
 	| {
 			type: 'movelist';
-			moves: Move[];
+			moves: PlayMove[];
 	  };

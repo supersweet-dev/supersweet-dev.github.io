@@ -1,0 +1,137 @@
+{
+	"name": "magician",
+	"structure": [
+		{
+			"type": "characterprofile",
+			"role": "magician",
+			"header": "The Magician",
+			"content": "The Magician is master of mind, keeper of arcane secrets, and wielder of the weave.",
+			"image": "magician.svg",
+			"stats": {
+				"body": 1,
+				"mind": 2,
+				"soul": -1
+			},
+			"hp": 4,
+			"placeholdernames": [
+				"Cletus",
+				"Fritz",
+				"Nemur",
+				"Murphy",
+				"Demi",
+				"Sassafras",
+				"Magpie"
+			],
+			"pronouns": "they/them",
+			"placeholderdescription": "People who have seen you struggle to describe you. Your visage is one of the secrets you keep."
+		},
+		{
+			"type": "origin",
+			"options": [
+				{
+					"label": "Orc",
+					"value": "orc",
+					"description": "Among the peoples of The Land, Orcs are recognized as the children of The Beast. They are of life and of blood, and they thrive on history and story.",
+					"move": {
+						"name": "Oracle",
+						"description": "When you cast a spell, you may also discern realities with the same roll.\nOn a miss, your mind becomes fixated on a magical mirage until you next rest. Treat all arcane information as suspect until then."
+					}
+				},
+				{
+					"label": "Elf",
+					"value": "elf",
+					"description": "Personally created by The Flower, Elves are the first people of The Land. Not one has yet died of old age. They are of the wind, and it keeps their songs for them.",
+					"move": {
+						"name": "Conduit",
+						"description": "When you cast a spell, if the spell requires a component you may ignore this requirement. On a failure, this move is disabled until your next rest. "
+					}
+				},
+				{
+					"label": "Dwarf",
+					"value": "dwarf",
+					"description": "Born in the depths, from the dreams of The Stone, Dwarves have only recently emerged to the surface. They are artisans and engineers, materializing their ideas into reality.",
+					"move": {
+						"name": "Artificer",
+						"description": "When you roll a full success on a spell, you may store its effect in a nearby item, to be released starting the next day.\nThe GM may adjust its strength or behavior based on the relevance of the vessel."
+					}
+				}
+			]
+		},
+		{
+			"type": "background",
+			"options": [
+				{
+					"label": "City",
+					"value": "city",
+					"description": "You cut your teeth in organized society, within system and structure. You were trained as part of a historied tradition, but you have chosen to break from it.",
+					"move": {
+						"name": "Heuristic",
+						"description": "When you study a magical item, glyph, or phenomenon, you may declare a mixed success before rolling to discern its nature.\nIf you do, the GM will tell you something useful, and something dangerous or incomplete."
+					}
+				},
+				{
+					"label": "Town",
+					"value": "town",
+					"description": "You grew up in a small community, where everyone knew each other. You learned the value of cooperation and the strength of bonds.",
+					"move": {
+						"name": "Unpredictable",
+						"description": "When you cast a spell and roll a mixed success, instead of forgetting it, the spell becomes volatile.\nThe GM changes its elemental affinity and adds a new effect.\nVolatile spells never return to their original form.\nIf this triggers again, the GM alters the existing volatile effect again. "
+					}
+				},
+				{
+					"label": "Enclave",
+					"value": "enclave",
+					"description": "You were born and raised in a roaming band of warriors. You may now thrive in common society, but you still carry the unorthodox ways of your people.",
+					"move": {
+						"name": "Covenant",
+						"description": "Describe your patron, the terms of your pact, and their involvement. When you act in service of this pact, take plus one forward. When you act against this pact, the DM might make a hard move on behalf of your patron."
+					}
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "Class Moves",
+			"content": "The Magician has access to the following core moves. You have access to these moves from the start of the game, and you may use them as often as you like, unless otherwise stated."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
+		},
+		{
+			"type": "control",
+			"header": "Basic Moves",
+			"content": "All players have access to the following basic moves. These moves are available to all characters, regardless of their role or background. Use them to interact with the world and resolve conflicts."
+		},
+		{
+			"type": "movelist",
+			"moves": [
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				},
+				{
+					"name": "This is a placeholder move",
+					"description": "This is a placeholder move description. Replace with actual move details."
+				}
+			]
+		}
+	]
+}
