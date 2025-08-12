@@ -4,7 +4,9 @@ import '../styles/home.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ReviewShowcase from '../components/ReviewShowcase';
 import FillerContent from '../components/FillerContent.astro';
+// @ts-ignore
 import TarotBoard from 'velvet-tarocchi';
+import RedactedChess from '../components/RedactedChess.tsx';
 
 const githubUsername = 'supersweet-dev';
 const linkedinUsername = 'supersweet';
@@ -66,6 +68,7 @@ const resumeLink =
 		</div>
 		<!-- Content -->
 		<div class="content">
+			<RedactedChess client:only="react" />
 			<p>This is my personal space. Here I showcase some of my demos.</p>
 			<p>
 				Feel free to check out my resume, or connect with me on social
