@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { parseStringPromise } from 'xml2js';
 import type { Review, RSSItem } from '../../types/index.d.ts';
 
-const LETTERBOXD_RSS_URL = 'https://letterboxd.com/pentagrami/rss';
+const LETTERBOXD_RSS_URL = 'https://letterboxd.com/alhaxa/rss';
 const TMDB_API_KEY = import.meta.env.TMDB_API_KEY;
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w342';
 
