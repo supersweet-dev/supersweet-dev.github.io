@@ -56,7 +56,8 @@
 	padding-left: 4rem;
 	text-align: left;
 	justify-content: left;
-	font-family: 'Honk', system-ui;
+	font-family: 'Supermercado One', system-ui;
+	font-variation-settings: 'MORF' 16, 'SHDW' 0;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
@@ -123,7 +124,8 @@
 .control .control-title {
 	font-size: 3rem;
 	margin: 0;
-	font-family: 'Honk', system-ui;
+	font-family: 'Supermercado One', system-ui;
+	font-variation-settings: 'MORF' 16, 'SHDW' 0;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
@@ -173,7 +175,8 @@
 	font-size: 3rem;
 	margin-bottom: 0.5rem;
 	margin-top: 0;
-	font-family: 'Honk', system-ui;
+	font-family: 'Supermercado One', system-ui;
+	font-variation-settings: 'MORF' 16, 'SHDW' 0;
 }
 
 .character-image {

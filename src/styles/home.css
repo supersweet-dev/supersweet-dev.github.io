@@ -83,6 +83,19 @@ main {
 	z-index: 1;
 }
 
+.eschaton-link {
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	font-size: 4rem;
+	font-family: 'Supermercado One', system-ui;
+	background-color: var(--primary);
+	color: var(--secondary);
+	text-decoration: none;
+	border-radius: 1rem;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 /* Footer */
 .footer {
 	text-align: center;
